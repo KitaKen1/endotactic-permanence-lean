@@ -1,0 +1,6052 @@
+{
+  "success": true,
+  "exit_code": 0,
+  "theorem_count": 740,
+  "excluded": [
+    "fc/ExtendedPermanence.lean"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sources_sha256": {
+    "Endotactic/AbsoluteBarrier.lean": "27c3f6caba719bd719e304787da87e3b178c96b29964b88da21836892f31c666",
+    "Endotactic/ActivityFluxBridge.lean": "c016690c61ea0d009a0c9d9983230f6a776c5254f8192f14778f792c4eee35ef",
+    "Endotactic/ActivityLimitNeighborhood.lean": "79cf55fe4092e0406f5980dda36190ec7aa7fe0c15a10cb42cde1b5004a6dc79",
+    "Endotactic/AffineActiveCompetitors.lean": "5212bb9d4b2550786a7a6dfb57b0347571a8296c5c37426e9a27e6b8e0408298",
+    "Endotactic/AffineApproximationExistence.lean": "5f5f14d8636aa1cf19896a59df4c189195b22d6c34bab13e59f40e7cf936af41",
+    "Endotactic/AffineBlockUnion.lean": "9a9107331d31beb3693e99b328253ca656ce088d49f4a6b72a301bb9df4280d5",
+    "Endotactic/AffineCap.lean": "b9b01a2c8a41117c6c742bf9ccdc75bc6da55eb87289274f388b0e475059b289",
+    "Endotactic/AffineCoordinateLift.lean": "e0dd457f4b723b5ae223b6b5217b6a388ab84f7f73db2df708a56d2143cc6e2f",
+    "Endotactic/AffineDualBounds.lean": "f37947fc8159d6f696cc380f73f1b0e6c86070143b5f5f206ff043844d12a25b",
+    "Endotactic/AffineExistenceExamples.lean": "82787056b0dbd31dd4bb684057538a4031c2a78ba2561d5032c1c609fb56a29f",
+    "Endotactic/AffineInductionData.lean": "4ab935c8c9b3fb590c66819d56ec273ecaa6f64bf57568023cd6de9dfbdbfa1e",
+    "Endotactic/AffineInductionExamples.lean": "fc7f75e024515e063fcaed2871a62df80eeeb8b355e254b4c33f47673250c2c5",
+    "Endotactic/AffineLiftExamples.lean": "87e819a34b8cd921dda035f9a70f0489f203bf9bddc3d2e7b34709fbcbd767db",
+    "Endotactic/AffineNormalization.lean": "c48067126817529320544136a733993d2da03b984efbd2017666e288f96212dd",
+    "Endotactic/AffineOffsetShift.lean": "cff89d479e62ded1ed1fe12cbfd1500681ea71c28df6222866dbd22c05d3f221",
+    "Endotactic/AffinePlateau.lean": "83260411cfcbdfdd4b27f9003505cdea168e64fa588fb69af6e6f732dd0901b3",
+    "Endotactic/AffinePowerComparison.lean": "c5f0aba71588cc7a301de04568d24e1b6ea1c4bb642ac47bbe276b5949a27556",
+    "Endotactic/AffinePowerExamples.lean": "c8455d06a650149ae25104306d5bdab6064469735d2d775d25d71e7bf5f2dbb7",
+    "Endotactic/AffineRobustness.lean": "c848686aac1dc1f475773a5f43357d4094a2d8fdefb863f6a2f5e84e1d7eb268",
+    "Endotactic/AffineShiftComparisons.lean": "30643908e970a999e6b291d72201da7577a4044d600622e7f8f2b8633fff91a8",
+    "Endotactic/AffineSupportInduction.lean": "083d4c26189892df32c17f2219f88ded55bb2caef5c75f1c211e2ca6b95ae1c0",
+    "Endotactic/AffineUnionExamples.lean": "703089197053ba4434fb441332187191e0c9f05127b50273504931cb491e90ed",
+    "Endotactic/AnchorFreeExamples.lean": "d0903f4613b820869b58569e948066529d2f74274c05588a68390930ccf39ff9",
+    "Endotactic/AnchorFreeWeakTrap.lean": "2c8efff8585adf90582436955617ffac9c37a1974f30985baae69d2235c237a8",
+    "Endotactic/BirthDeathPermanence.lean": "d9736f3b711033b0628c5aa16cbfa163586f3aba6002c261d28c40346d179c05",
+    "Endotactic/BoxInvariance.lean": "0fdc9c181405e580175cbc6c1faa4643fb0529173fe4d3b0a1fc06cf106818c1",
+    "Endotactic/BoxKinetics.lean": "2249fa35e2cce431943cebf17929310b8cf3b26844707d19081cda4f8eb91623",
+    "Endotactic/ClassDualBounds.lean": "9da83399503e58b1bd95347668fe09de1fdfd1064a0bb1f566dcb3fe6de73314",
+    "Endotactic/ClassFaceTrap.lean": "7fbfe60d55c8edb523384a103a1f5a25050826fa10d60e1440b6ba00fc9ae35f",
+    "Endotactic/ClassInvariance.lean": "a8438fcccb166c013426337e80a4285e97199b6d4c78e9c49b431c6625b8467a",
+    "Endotactic/CompactAbsorption.lean": "8012fd552f744971290df66fd0ce5b6253a761ebc00886f947e8b53578996965",
+    "Endotactic/CompactSequentialExclusion.lean": "2da6928280f1cc7db93211819c2030d445b4ee3285477af39f42583cdff514b0",
+    "Endotactic/CompactTrapPermanence.lean": "7e42d4d39cea0fbfcae1cedea72c046c154a09d17f1a4f1bfe09ed53c975f260",
+    "Endotactic/ConservedNormalization.lean": "dad6fc0fc8e141a23dff7a90b7c063c59448237771e16e228a41700a8832b3b0",
+    "Endotactic/ConversionCompactRoute.lean": "488bc53b4d29097e7d94f549477079982593792574cb6e35fb954dde02c83bbc",
+    "Endotactic/ConversionPermanence.lean": "bfca502abd1bb4475198ac869706c01fe329dd00e8fca4cf634fdad87dda9006",
+    "Endotactic/ConversionRelativeWeakTrap.lean": "6c225bf184b96ebcf4e1981bcf5745950e816bc239eff1d87fc5cfeb8654b9a0",
+    "Endotactic/CoordinateEmbedding.lean": "0571df6dc62f27c2a1207e81d7671a061ec7b514003e689652427ac67f0257ac",
+    "Endotactic/DegeneratePermanence.lean": "792da99c24fa23493f20bfba15bab4769f8d552c921525eda072ea66b28ac4fb",
+    "Endotactic/DirectionalDominance.lean": "97bdb6f5cae99ac27a9bc179735454424e8e72337cb718996712e15475d901e6",
+    "Endotactic/DirectionalWallCounterexample.lean": "9c6607eca3d6b491f6e1d8a429d7e0c032026c3ac032aa902d0fa9bb0a598aae",
+    "Endotactic/DiscoveredRelativeAnchor.lean": "4a1f00416b4ef6b97549621a90f9ca7e9258cd4725ccba26c3347ec05a4c6e10",
+    "Endotactic/EndotacticInitialTrap.lean": "a467e7c3a807752ec004bf1b4815a402ddcef0e428278763cbab11f6a2871edb",
+    "Endotactic/EssentialSource.lean": "c7cc73585b62da5e88f5e3c52ab277e3113c463a2a70a1f8d35d98a9a541d057",
+    "Endotactic/Examples.lean": "c1d377b26411dcf7e2af8c2594cb5a2447eca73a3d112b60c14ed2f21e5573bd",
+    "Endotactic/ExponentMinimum.lean": "38ef1fa7080a73ce66a667ba05aec113603af711c3c769ccb3d5123939e2af5b",
+    "Endotactic/FiniteClassTrap.lean": "e43f8c80b423417ec1c0f330dba002b059f5cfda8c2d2e5a8ca0a1e70f20ae3f",
+    "Endotactic/FiniteDirectionalCover.lean": "e2ed366611b59306815c06fe7cd33da035414cee53cc21dab6f8ca961b49a11e",
+    "Endotactic/FiniteLiftTolerance.lean": "e32c970a6f6d9ac53b1860487b5d597f19bba9f7c9c3461abfd06992f92e278c",
+    "Endotactic/FiniteMinimum.lean": "da65d991f6ce6060f79b5aaf92448871def78d46cc39253497a941e97300ef1b",
+    "Endotactic/FiniteMinimumBandCover.lean": "1c0395369e3951b9d3b8798abe01bae8b421568024349832579969c6d76c88b6",
+    "Endotactic/FiniteSlopeDominance.lean": "331008bfc9b9f488463205690f3ebaafbdff73e4dd1eed305922b8ea69e0993e",
+    "Endotactic/FixedMinimumAssembly.lean": "e94ef09b1d9c5d28f301da86b63e1540b37cb33da72279bb557090c21d11e171",
+    "Endotactic/FixedMinimumAssemblyExamples.lean": "a84eac097b398e8b202906deee704ad4f4d455a6dd31bdf99ac2b4951a0bb42a",
+    "Endotactic/FixedMinimumExistence.lean": "5d9db241b1367f834effa5e6224b1c24a209634f5bc804976a70607ad9d0b56e",
+    "Endotactic/FixedMinimumSeeds.lean": "87a6a8edd0e73c8011ce56aaed52d4a3d45cf38e5c5bce2293a882c77febab58",
+    "Endotactic/FluxBound.lean": "745a7849211471d2b8273fcc7d8709406477c7d4850a9a1647342408097d93ef",
+    "Endotactic/GeneralPermanence.lean": "a04f3868fd999669d0c42c431da63c391f69e8d33289b723c7686d671f682c62",
+    "Endotactic/GeneralPermanenceExamples.lean": "182041bb9084d2b01399795a4a964a1a28183bf41c3590667f0e88f2fd6c44a6",
+    "Endotactic/GeometryMargins.lean": "d3c0906bbceac6563b13bed22fbaa91d0e42f251694f20e2728348e9d0e44542",
+    "Endotactic/GlobalVolterra.lean": "5599663fe807489e68717c329902efa5317666f64482cbf27fe1d738d8c46a3c",
+    "Endotactic/InitialTrapExamples.lean": "2971b65401b01b091de308ff7f4ceb299971edc3b924f6915409f95cf81fc70c",
+    "Endotactic/IntegralTrajectory.lean": "c0f1503e4bc923e1c98db46e2cce59b5ed7f4e3fbdf0483370e81502e49392b9",
+    "Endotactic/IntegralUniqueness.lean": "38afe04d5360df181bbf330298b14e1c85263e2844df88b200ed5f310f5d7945",
+    "Endotactic/KineticsRegularity.lean": "471c118d2c6ba170283bb3fc5db193417fa4358f261b78315ab3843567be5485",
+    "Endotactic/LateCompactAbsorption.lean": "f99c004fc5633be81db1694a9783defdb27b50a0398746e0c3c3026904321549",
+    "Endotactic/LinearDeficitBarrier.lean": "61057f4f5300250bba1c7b6a27a5b2c03cd3ebd91595cdec35e7723a046cbf47",
+    "Endotactic/LinearGeometry.lean": "a391921704ad9dc64f828c168c75e044a9cb72362fe907f767669c04edb56c64",
+    "Endotactic/LocalExistence.lean": "d9ac7cc577023ab8bc18927419cf09489eeda1aa8303b7e5b0a4eab458852c42",
+    "Endotactic/LogarithmicBox.lean": "f3720b9a857fd80c64ca51421638b951e8f1a77a6cdc0d1cbe98d1e22d8a5e9d",
+    "Endotactic/MinimumBandReduction.lean": "d073a6fdfcb3d9d37e71a739bdc8a38126764e6a22c4fa3d2d5a84718f8a8389",
+    "Endotactic/MinimumBandSelection.lean": "29a33d16937a56e4b9f33c0edd60443a79ec3f01f9eb9dc1da2de8324b414b6e",
+    "Endotactic/MinimumShiftChain.lean": "92b9367d4854da81bb72f2fc7624379310497d43438f0fc8082ae058ab168418",
+    "Endotactic/MinimumShiftExamples.lean": "4bd75455abc45990019c26d9ab41988225f0af3e8ca6a5e7277fdfa5a3018541",
+    "Endotactic/MonomialOrder.lean": "8eeffdce508f897aee3fe47b2fcfd4491b2a6f0634e38a0cd38896bba10f1f97",
+    "Endotactic/MovingPowerAsymptotics.lean": "393a731d6fc85a0ca34cd746d4d64330aa7646076b8e8f78ff2c7e291753d333",
+    "Endotactic/NarrowZeroCap.lean": "303aa14910e6a51fd85dd3607a35b5495f3c6babfddbbe837941db31c44ecfa2",
+    "Endotactic/Network.lean": "648908c5be6219792be37af63dd7caed671600c225d8b9f4ed8bd19d09daaea9",
+    "Endotactic/NonlinearVolterra.lean": "b6f6fb84d6dbeae004beed860767782cbe3a54f868158ae515a41e85e2b95ec3",
+    "Endotactic/OffsetDecayNeighborhood.lean": "9d88b2bc0eb72282f307d814ed5b1c7b1c856d53dd8be968a4044782dcbeade4",
+    "Endotactic/OneSpeciesDominance.lean": "e524da9653fe11637bdd0058e679d1df60c0ce9a547fe053574e177aa5ad4e4e",
+    "Endotactic/OneSpeciesPermanence.lean": "8a4e020de24752e043c3e4e373544c19a24b38139397500834e29fb43474f512",
+    "Endotactic/OrderedMinimumBandCover.lean": "3465a24eefceee649bbd4e66e49f5318ce34d7967642fea7cc1073f6e1d34af7",
+    "Endotactic/Permanence.lean": "366db0318636b5eb09c8497410329c732704126e0e068037eca9d5076e3f2ce6",
+    "Endotactic/PolyhedralInvariance.lean": "c2c58cbb98bb943690833bc9a07260a007a60f576879a86d0c79da94f8de3fd7",
+    "Endotactic/PowerBoxGeometry.lean": "849f0800b509c082af1868f95ea6ecf3a63112e69063e7723f6e799730a5e96e",
+    "Endotactic/RaisedCoordinateSupports.lean": "72804fc8cb4cfe5981fbbefd36841687de9768507b34afc0478b334f9d43d873",
+    "Endotactic/RateBoxRestriction.lean": "bd600e79e97d30c9fa36903e80a753fa59c7194c109156b0ecf2635ca20054d8",
+    "Endotactic/RelativeAffineRobustness.lean": "ec09378e892f38007e195b3a54eaaffafda489742ca77167c1fb5eb3d54b8212",
+    "Endotactic/RelativeWeakFiniteClassTrap.lean": "ef303384b54d3e4adc89f0eeaaf8385e61e717df793620625262ec542d2d66e1",
+    "Endotactic/ScalarBarrier.lean": "05a6a91a47c1f730b49af133c3d900224d9dc7f231ce4f993a20aa38812dcd74",
+    "Endotactic/ScalarTrapPermanence.lean": "a14196861766518deaf70a2f092f9e76ae5b469d1995ee9838e7fbec4b05bb97",
+    "Endotactic/ScaleIteration.lean": "6db9b602431d335e6213ca4b9723d06af1ac625cd19a24c93fd49c1e947ff460",
+    "Endotactic/ScaleLimits.lean": "1459434ba2a60369bb5a491a25e0099e17247b8906061febeb0da723634b7631",
+    "Endotactic/ScaleTrapConstruction.lean": "808020281469a5d149d0dd3796900c25d6660a503d6c1bbf08dd8828c9048923",
+    "Endotactic/ScaleTrapPermanence.lean": "fa6add1f122005286aa377ededa224e67a90cce8611a6ff784c7d28dfe322efd",
+    "Endotactic/ScaledActivityExamples.lean": "940ec04446ab5c1299cf80308239488b603c52d549a0f204593a63c7c98ecf51",
+    "Endotactic/ScaledAffineActivity.lean": "700ad29786da2d9303f03605879c5b857cdf4f3164d9a23b94d0a6dd06e5a07a",
+    "Endotactic/ScaledZeroCap.lean": "5d8988837c95a0b00a3f3489bca22e03e0a4bd599c45680c7501e1a716459993",
+    "Endotactic/SeededAffineUnion.lean": "a512783441354f369476ce46c9834270a7b20d3df40cceb28eed7145f57e4c51",
+    "Endotactic/SlackBoxCounterexample.lean": "80c32ff6d80735de792b9adad9fb5f8885138f29a859c74459da4f8e79a07ab5",
+    "Endotactic/SlackBoxPermanence.lean": "da2be9b3bcdcfb4c48966cd6ead41a0dff18ea87215e575883c892735974bbf1",
+    "Endotactic/SlackBoxWeakTrap.lean": "cc23db3a15780140c1ed24188eb636f919ea30d8e623a6b9571e47e6733f6d5c",
+    "Endotactic/StarCertificate.lean": "258754c4a4fc14570c6e9d1045e9ed0e4154335418b8d67d44392a51f8a28753",
+    "Endotactic/StarGlobalExistence.lean": "9ab6f6d9b6b1c07a0f6237c2f35afe63e58c6505b168c672126461f9fb26f96b",
+    "Endotactic/StarInitialTrap.lean": "a2ef633ab9295cc4b390e32e7dd709bdc472445ecde361c6b992c73f602476a2",
+    "Endotactic/StarPermanence.lean": "4b5d625d45392906197feda24ae3ca0d31fd060eb33e0d137d00cf773c1a0b1f",
+    "Endotactic/Stoichiometry.lean": "ce0e63c4f308cacb3e75a33a14d77c778a29265b9e7dc55a6d6af14aa42df83b",
+    "Endotactic/StrictFaceTrap.lean": "57106da3c14eafb53448f8916d492fec70ebb80dceea3c8fd2ae5db7b7483871",
+    "Endotactic/UniformDirectionalCertificate.lean": "01c4d1b6a04b6d7d476f250e320fc4f9c7b082ac7a395df37e798d47c330cb58",
+    "Endotactic/UniformKinetics.lean": "8c4451c185974f1a09b57cb9614b5ebe85b20bc362f617763b7141ca75b68efc",
+    "Endotactic/WeakClassFaceTrap.lean": "ce8ce9176b9bba0f3a639e1601b5f713947e765f4568464e65a3429c25d730d3",
+    "Endotactic/WeakFaceRigidity.lean": "873ea8fed27372ba0208017d282aadcc11e931de4cb57a6473b03664bdea6351",
+    "Endotactic/WeakFiniteClassTrap.lean": "cbf52f80aaa2540690693065e1f50f11a8aaaa7404182a8d6ff469274b017be7",
+    "Endotactic/ZeroSlopeActivity.lean": "39a08ebf7456f319b94409ff745eb382b2e306fe74fc205640cdc496bad61852"
+  },
+  "theorems": [
+    {
+      "theorem": "Endotactic.ac_monotone_of_below_cap_deriv_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.eventual_plateau_of_ac",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_slopeTolerance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.finite_slopes_flux_of_tolerance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniform_active_flux_of_sequentialActivityBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.active_direction_has_nonzero_projection_of_carrier_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniform_exterior_active_flux_of_sequentialActivityBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniform_active_flux_of_affineApproximation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.isClosed_activityLimit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.isCompact_activityLimit_inter",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.sequentialActivityBound_iff_limits",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.isCompact_badActivityLimits",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.sequentialActivityBound_iff_bad_empty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.activityLimits_near_level",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.sequentialActivityBound_near_level",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.uniformActivityBound_near_level",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.eventually_competitor_value_lt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.active_omitted_coordinate_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.eventually_competitor_value_lt_seed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.seed_active_omitted_coordinate_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.active_omitted_coordinate_le_of_raised_type",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_uniform_affine_approximation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_uniform_active_flux_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_uniform_exterior_active_flux_family",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.affineBlockLabel_decode",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.affineBlockLabel_surjective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.affineBlockLabel_injective",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.affineBlockLabel_card_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.blockUnion_slope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.blockUnion_offset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.blockUnion_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.blockUnion_active_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.blockUnion_active_in_block",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.blockUnion_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.blockUnion_slopes_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.blockUnion_offsets_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.blockUnion_sequentialActivityBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.withCap_value_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.withCap_value_succ",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.withCap_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.withCap_minimum_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.withCap_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.active_of_withCap_active",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.minimum_lt_of_withCap_active",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.coordinateLift_value_sub",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.coordinateLift_active_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.coordinateLift_exponential_active_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.coordinateLift_slopes_mem_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.coordinateLift_offset_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.coordinateLift_active_limit_norm_lt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.coordinateLift_sequentialActivityBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.coordinateLift_last_minimum_stratum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.weighted_value_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.weighted_plateau_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.dot_coordinate_mask",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.BoxCertificate.plateau_subset_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.BoxCertificate.isCompact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.BoxCertificate.positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_affine_certificates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_affine_certificates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ExistenceExamples.singularTolerance_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ExistenceExamples.singularTolerance_no_uniform_positive_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ExistenceExamples.singularTolerance_not_continuous",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ExistenceExamples.singularTolerance_affine_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ExistenceExamples.singularTolerance_uniform_affine_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteAffineApproximation_iff_dimensions",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_support_entry_of_lower_dimensions",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.supportFamilyOracle_of_lower_dimensions",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineSupportPrefix.exists_next_level",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.supportFamilyOracle_of_wide_tolerance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_fixedMinimumData_of_wide_tolerance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_fixedMinimumApproximation_of_wide_tolerance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.seed_alone_fails_cube_width",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.InductionExamples.discontinuousTolerance_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.InductionExamples.discontinuousTolerance_not_continuous",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.InductionExamples.discontinuous_all_support_data_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.InductionExamples.discontinuous_fixed_minimum_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.InductionExamples.discontinuous_neighborhood_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.LiftExamples.firstCoordinate_only_omitted",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.LiftExamples.binary_lift_raised_active_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.LiftExamples.binary_lift_boundary_all_active",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.LiftExamples.binary_lift_raised_limit_ge",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.LiftExamples.last_minimum_seed_sequential",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.LiftExamples.last_minimum_seed_stratum_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.LiftExamples.last_minimum_seed_slopes_and_decay",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.normalizeAt_dot",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.normalizeAt_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.normalizeAt_anchor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.normalizeAt_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.radialRepair_weights",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.radialRepair_mem_convex",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.radialRepair_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.radialRepair_mem_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.radialRepair_active_face",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.radialRepair_dist_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.offsetShift_slope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.offsetShift_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.offsetShift_active_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.offsetShift_sequentialActivityBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.offsetShift_offsets_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.powerPrefixShift_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.powerPrefixShift_succ",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.powerPrefixShift_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.offset_isLittleO_of_le_power",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.continuous_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.plateau_isClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.value_convex_combination",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.plateau_convex",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.plateau_isCompact_of_subset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.constant_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.constant_active_iff_mem_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.active_value_lt_of_notin_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.active_value_ne_at_class_representative",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exponent_ge_of_power_upper_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.raised_coordinate_limits_ge_of_sum_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.negative_power_offset_ratio_tendsto",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.eventually_lt_of_normalized_limits",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.stronger_negative_power_eventually_lt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.zero_label_beaten_by_negative_power",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.raised_competitor_eventually_beats_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.raised_competitor_eventually_beats_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.dot_exponential_increment_on_coordinates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.raised_coordinate_limits_ge",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.PowerExamples.binaryPowerFamily_boundary_all_active",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.PowerExamples.binaryPowerFamily_raised_active_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.PowerExamples.binaryPowerFamily_raised_limit_ge",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.PowerExamples.top_seed_neighborhood_with_decay",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.PowerExamples.rpow_not_littleO_same_exponent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.continuous_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.compact_disjoint_plateau_gap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.exists_relaxed_plateau_subset_open",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.exists_enlarged_positive_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_compact_affine_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_compact_affine_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.active_minimum_le_of_next_seed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.active_minimum_ge_of_previous_seed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineSupportPrefix.exists_successor_of_oracle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineSupportPrefix.exists_successor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_affineSupportPrefix_of_oracle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_affineSupportPrefix",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_fixedMinimumData_of_oracle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_fixedMinimumData_of_lower_dimensions",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_old_slope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_stronger_slope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_old_offset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_stronger_offset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_old_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_stronger_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_all_active_at_tie",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_tie_point_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_old_active_omitted_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_seed_active_first_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_old_active_witness",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UnionExamples.competitorFamily_old_activityLimit_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.augmentedAnchorFreeTrap_carrier",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.integralSolution_mem_anchor_free_trap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.uniformPermanent_via_anchor_free_weak_traps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.AnchorFree.singletonFamily_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.AnchorFree.singletonFamily_mem_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.AnchorFree.singletonFamily_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.AnchorFree.singletonFamily_weak_fixed_rates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.AnchorFree.singletonFamily_no_relative_anchor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.AnchorFree.singletonFamily_not_weak_variable_rates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.AnchorFreeWeakFiniteClassTrap.toRelativeTrap_carrier",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.AnchorFreeWeakFiniteClassTrap.exists_global_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.AnchorFreeWeakFiniteClassTrap.positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.AnchorFreeWeakFiniteClassTrap.integralSolution_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_anchor_free_weak_class_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_anchor_free_weak_class_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniformPermanent_of_anchor_free_weak_finite_class_traps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeath_rhs_coordinate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeath_stoichiometricSubspace",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeath_positiveClass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeath_positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeathFamily_values",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeathFamily_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeathFamily_flux_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeath_eventuallyIn_interval",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeath_uniformPermanent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ac_nonnegative_of_deriv_on_negative",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.clm_integral_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.clm_ac",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.clm_ae_hasDerivAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.mem_box_of_outside_sign",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.boxClamp_lower_face",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.boxClamp_upper_face",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.congr_field",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_cutoff_integralSolution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_in_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.boxClamp_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.boxClamp_eq_of_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.boxClamp_lipschitz",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.cutoffRhs_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.cutoffRhs_measurable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.rhs_bounded_on_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.cutoffRhs_uniform_lipschitz",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.cutoffRhs_bounded_lipschitz",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_cutoffODE",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.dot_add_left",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.dot_eq_in_stoichiometricClass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ClassBoxCertificate.class_plateau_subset_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ClassBoxCertificate.isCompact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ClassBoxCertificate.positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_class_affine_certificates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_class_affine_certificates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classAffineFaceCertificate_of_projections",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classAffineFaceCertificate_of_global",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.class_affine_branch_strip_of_face",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.class_affine_strip_of_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_class_affine_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_class_affine_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.stoichiometricClass_isClosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.stoichiometricClass_convex",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveClass_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.cutoffRhs_mem_stoichiometricSubspace",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.sub_initial_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.mem_stoichiometricClass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_in_class_affine_strip",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.isClosed_active",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_affine_active_margin_on_compact_sublevel",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.eventuallyIn_plateau_of_compact_strict_exterior",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.compact_sequential_exclusion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finite_compact_sequential_exclusion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.integralSolution_mem_of_trapped_solution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniformPermanent_of_compact_strict_exterior",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniformPermanent_of_compact_affine_traps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.affine_value_eq_in_class",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.conserved_faces_feasible",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classNormalizeAt_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classNormalizeAt_dot",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classNormalizeAt_anchor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classNormalizeAt_class_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classRelativeAnchor_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_classRelativeAnchor_of_face_witnesses",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classWeakAffineFaceCertificate_classNormalizeAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_relative_weak_class_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_weak_face_witnesses",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.uniformPermanent_via_finite_traps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.isEndotactic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.total_projection_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.class_iff_total",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.rhs_at",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.family_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.family_class_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.family_class_compact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.family_class_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.family_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.exists_global_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.absorbingFamily_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.absorbingFamily_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.absorbingFamily_cap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.absorbingFamily_flux_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.uniformPermanent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.augmentedFamily_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.augmentedFamily_class_carrier",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.augmentedFamily_conserved_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.augmentedFamily_no_strict_class_anchor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.negative_total_projection_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.augmentedFamily_relative_anchor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.augmentedFamily_weak_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.augmentedInitialTrap_carrier",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.integralSolution_mem_augmented_trap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.uniformPermanent_via_relative_weak_traps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.extendCoordinates_apply",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.extendCoordinates_apply_outside",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.restrict_extendCoordinates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.restrictCoordinates_exponentialPoint",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.continuous_restrictCoordinates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.tendsto_restrictCoordinates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.restrictCoordinates_mem_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.extendCoordinates_mem_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.norm_sub_extendCoordinates_lt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.dot_extendCoordinates_sub",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.omitted_coordinate_eq_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.extendCoordinates_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.stoichiometricSubspace_eq_bot_of_vectors_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.rhs_eq_zero_of_vectors_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveClass_eq_singleton_of_vectors_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.constant_integralSolution_of_vectors_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.integralSolution_eq_initial_of_vectors_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_vectors_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniformPermanent_of_vectors_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.fixed_direction_eventual_positive_flux",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.network_endotactic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.directions_compact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.directions_nonconserved",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.direction_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.rates_mem_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.rhs_formula",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.exponentialPoint_at_direction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.twice_nat_lt_two_pow",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.negative_flux_at_direction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.scale_tendsto_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.no_uniform_ray_threshold",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.no_uniform_directional_certificates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.DirectionalWall.finite_samples_eventually_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.DiscoveredAnchor.relative_anchor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.DiscoveredAnchor.face_witnesses",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.DiscoveredAnchor.class_carrier",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Conversion.DiscoveredAnchor.exists_global_positive_from_face_witnesses",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_compact_positive_initial_face_trap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_endotactic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_uniform_compact_initial_trap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_uniform_positive_trajectory_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.essentialMinimum_projection_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.essentialMinimum_source_lt_of_negative",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_essentialMinimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_positive_essential_source",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_positive_negative_source_gap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthDeath_endotactic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.birthOnly_not_endotactic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.degradation_vector",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Examples.explicit_flux_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exponentMinimum_le_coordinate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exponentMinimum_attained",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.continuous_exponentMinimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exponentMinimum_mem_interval",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exponentMinimum_eq_top_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.uniformActivityBound_near_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniform_active_flux_near_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniform_exterior_active_flux_near_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.FiniteClassTrap.exists_global_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.FiniteClassTrap.positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.FiniteClassTrap.integralSolution_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniformPermanent_of_finite_class_traps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finite_directional_cover_eventual_flux",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finite_directional_cover_scaled_eventual_flux",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_common_positive_width",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.exists_next_lift_level",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.coordinate_error_lt_of_minimum_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.coordinateLift_active_limit_of_minimum_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ac_congrOn",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ac_const",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ac_min",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ac_finset_inf",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteMinimum_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteMinimum_attained",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteMinimum_ac",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteMinimum_deriv_eq_active",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteMinimum_ae_deriv_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteMinimum_ae_deriv_lower_bound_on",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.growth_of_ac_deriv_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteMinimum_growth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_finite_minimum_band_cover",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.CoversMinimumBands.nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_pruned_minimum_band_cover",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.minimum_band_endpoints_strict_of_noncontainment",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.l1_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_directional_exponent_tolerance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_fixed_slope_tolerantCertificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finite_slopes_tolerant_eventual_flux",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.family_label_slope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.family_label_offset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.family_label_outside",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.family_label_raised",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.active_raised_limits",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.active_omitted_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.seed_active_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.block_active_limit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.sequentialActivityBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.slopes_mem_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.offsets_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.slopes_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.sequentialActivityBound_on_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.offset_power_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.near_minimum_with_decay",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumData.uniformActivityBound_near_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AssemblyExamples.exampleLevel_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AssemblyExamples.exampleLevel_lt_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AssemblyExamples.all_support_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AssemblyExamples.all_label_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AssemblyExamples.all_support_fixed_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AssemblyExamples.all_support_slopes_and_decay",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AssemblyExamples.all_support_stratum_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AssemblyExamples.seed_alone_fails",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AssemblyExamples.all_support_nearby_uniform",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_seed_fixedMinimumApproximation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_fixedMinimumApproximation_of_lower_dimensions",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumApproximation.offsets_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumApproximation.near_minimum_with_decay",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.FixedMinimumApproximation.uniform_near_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.fixedMinimumApproximation_of_lower_dimensions",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteAffineApproximation_of_minimumCombination",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.minimumSeedFamily_activityLimit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.minimumSeedFamily_offset_littleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.minimumSeedFamily_oneDim_fixedMinimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.minimumSeedFamily_top_fixedMinimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.minimumSeedFamily_oneDim_nearby_uniform",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.minimumSeedFamily_top_nearby_uniform",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.parallelFamily_activityLimit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.weighted_sum_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.weighted_sum_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.dot_rhs",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.network_flux_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniformPermanent_of_endotactic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.measurable_extended_permanence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.extended_permanence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.original_extended_permanence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GeneralExamples.nonlinear_uniformPermanent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GeneralExamples.conserved_uniformPermanent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.dot_error_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.dot_gap_transfer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.source_gap_transfer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.continuous_nonnegativeClamp",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.weightRate_ge_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.weightRate_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.normBound_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.continuous_inflate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.path_intervalIntegrable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.continuous_weightedValue",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exp_weight_mul_time_le_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.weightedValue_norm_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.integral_exp_mul_real",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.dist_weightedVolterra_apply_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.weightedVolterra_contracting",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.on_interval",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.exists_global_integralSolution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.global_integralSolution_unique",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.InitialTrapExamples.nonlinear_uniform_initial_trap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.InitialTrapExamples.nonlinear_constant_rates_wellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.InitialTrapExamples.conserved_uniform_positive_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.clm_intervalIntegrable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.IsIntegralSolution.dot_integral_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.IsIntegralSolution.dot_intervalIntegrable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.IsIntegralSolution.dot_ac",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.IsIntegralSolution.dot_ae_hasDerivAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.branch_ac",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.branch_ae_hasDerivAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.active_iff_minimum_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.minimum_ac",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.minimum_growth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.mem_plateau_iff_minimum_ge",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.minimum_le_constant_branch",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.minimum_ae_deriv_lower_bound_below",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.eventuallyIn_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.continuous_eq_zero_of_le_integral",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.IntegralSolutionOn.eqOn_of_lipschitzOn",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.integralSolutionOn_unique",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.IsIntegralSolution.eqOn_nonnegative",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_unique_positive_local_integralSolution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.rhs_contDiff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.rhs_locallyLipschitzOn",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.rhs_measurable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.minimum_ae_deriv_lower_bound_below_after",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.eventuallyIn_plateau_after",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.eventuallyIn_plateau_of_eventual_compact_strict_exterior",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ac_nonnegative_of_linear_deficit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ac_nonnegative_of_linear_deficit_in_strip",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.mem_affine_plateau_of_linear_deficit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.dot_eq_of_zero_projections",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.active_direction_has_nonzero_projection",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.active_direction_has_positive_essential_source",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.IntegralSolutionOn.dist_initial_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.IntegralSolutionOn.increment_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.IntegralSolutionOn.dist_le_time",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.IntegralSolutionOn.restart",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_short_positive_time",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.unique_integralSolution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_positive_local_integralSolution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exponentialPoint_logarithmicExponent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.tendsto_logarithmicExponent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.logarithmicExponent_mem_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.logarithmicExponent_boundary_norm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.isOpen_openCoordinateBox",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.convex_subset_open_box_of_no_boundary",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.affineMinimumCombination_of_bandSelection",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteAffineApproximation_of_minimumBandSelection",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.OrderedOpenMinimumBandCover.exists_ordered_chain",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.minimumBandSelection",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.affineMinimumCombination",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finiteAffineApproximation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.family_label_slope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.family_label_offset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.active_in_block",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.active_minimum_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.active_minimum_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.active_limit_in_band",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.sequentialActivityBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.slopes_mem_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.offsets_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.MinimumShiftChain.affine_approximation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.affineApproximation_of_minimumShiftChainExistence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.affineMinimumCombination_of_orderedChainExistence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ShiftExamples.twoBlockChain_card",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ShiftExamples.twoBlockChain_all_active_at_cut",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ShiftExamples.twoBlockChain_active_minimum_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ShiftExamples.twoBlockChain_sequentialActivityBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ShiftExamples.twoBlockChain_cut_is_actual_activity_limit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exponentialPoint_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.monomial_exponentialPoint",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.monomial_domination_of_exponent_gap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exponentialPoint_flux_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.moving_rpow_ratio_tendsto_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.moving_rpow_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.moving_rpow_ratio_tendsto_atTop",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.rpow_isLittleO_nhdsGT_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.offset_isLittleO_along_scales",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.moving_weighted_power_sum_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.active_zero_transfer",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.zero_cap_plateau_subset_open_power_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.dot_sub",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.monomial_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.rhs_mem_stoichiometricSubspace",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.continuous_extendIntervalCurve",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.extendIntervalCurve_eq_of_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.curveRhs_intervalIntegrable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.dist_volterra_apply_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.volterra_lipschitz",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.existsUnique_fixedPoint",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.fixedPoint_integralSolution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.BoundedMeasurableODE.exists_integralSolution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.shifted_power_offset_isBigO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.offset_isLittleO_of_powerBound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_common_offset_decay",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.sequentialActivityBound_mono",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.sequentialActivityBound_near_level_with_decay",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.sequentialActivityBound_near_minimum_with_decay",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.oneSpecies_stoichiometricSubspace_eq_top",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.oneSpecies_positiveClass_of_nonzero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_scalarTrap_of_oneSpecies_endotactic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.oneSpecies_uniformPermanent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.oneSpecies_positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.oneSpecies_permanentForRates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.oneSpecies_measurable_permanence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_ordered_open_minimum_band_cover",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.OrderedOpenMinimumBandCover.first_contains_left",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.OrderedOpenMinimumBandCover.last_contains_right",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.OrderedOpenMinimumBandCover.adjacent_overlap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.OrderedOpenMinimumBandCover.exists_adjacent_cut",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UniformPermanent.mono_regularity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.measurable_conjecture_implies_extended",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.UniformPermanent.implies_permanentForRates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.uniform_extended_conjecture_implies_original",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ac_max",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ac_nonnegative_of_deriv_in_strip",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.affine_branch_ac",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.affine_branch_ae_hasDerivAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.affine_minimum_ac",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.affine_minimum_ae_deriv_nonneg_on",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.GlobalIntegralSolution.mem_affine_plateau_of_strip",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_in_affine_strip",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.powerBox_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.logarithmicExponent_power_scale",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.logarithmicExponent_mem_power_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.logarithmicExponent_power_boundary_norm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.logarithmicExponent_norm_lt_mem_open_power_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.powerBox_subset_unit_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.capped_sqrt_le_quarter_power",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.RaisedSupport.embedding_range",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.RaisedSupport.embedding_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.RaisedSupport.mem_iff_range",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.RaisedSupport.singleton_card",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.RaisedSupport.insert_card",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.RaisedSupport.omitted_exists",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.RaisedSupport.last_omitted_unique",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.RaisedSupport.last_omitted_eq_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AdmissibleRates.mono_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.UniformPermanent.mono_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.measurable_conjecture_of_strict_rate_boxes",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_wider_weak_class_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.exists_relaxed_plateau_inter_subset_open",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.exists_enlarged_positive_box_inter",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.RelativeWeakFiniteClassTrap.toWeakTrap_carrier",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.RelativeWeakFiniteClassTrap.exists_global_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.RelativeWeakFiniteClassTrap.positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.RelativeWeakFiniteClassTrap.integralSolution_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniformPermanent_of_relative_weak_finite_class_traps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.growth_of_right_derivative_lower_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.finite_entry_of_growth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.eventual_plateau_of_growth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.initialLower_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.initial_box_order",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.initial_mem_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.exists_global_positive_in_initial_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.integralSolution_mem_initial_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.family_values",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.family_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.family_minimum_le_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.exists_outside_margin_in_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.exists_active_margin_in_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.eventuallyIn_interval",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.ScalarTrap.uniformPermanent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.rootScale_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.rootScale_succ",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.rootScale_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.rootScale_tendsto_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.rootScale_crosses_threshold",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.capped_rootScale_reaches_threshold",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.mem_scaleLimit_of_sequences",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.scaleLimit_mono",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.mem_scaleLimit_iff_small_witness",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.isClosed_scaleLimit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.isCompact_scaleLimit_inter",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.compact_avoids_level_band",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_scaleTrapFamily",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.capped_rootScale_succ",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaleTrapFamily.faceCertificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaleTrapFamily.eventual_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaleTrapFamily.uniformPermanent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.parallelFamily_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.parallelFamily_all_active",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.parallelFamily_has_sequential_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.parallelFamily_offset_not_continuous",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.exists_parallelFamily_uniform_flux",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.badFamily_slope_mem_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.badFamily_offset_littleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.badFamily_not_sequential",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ActivityExamples.badFamily_no_uniform_activity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.atScale_slope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.atScale_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.uniformActivityBound_of_sequential",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.norm_close_coordinate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.exists_active",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.zero_cap_plateau_subset_open_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.zero_cap_plateau_compact_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.exists_small_scale_zero_cap",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.seededAffine_card_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.seededUnion_seed_slope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.seededUnion_seed_offset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.seededUnion_block_slope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.seededUnion_block_offset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.seededUnion_active_in_block",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.seededUnion_projected_active",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.seededUnion_slopes_mem_cube",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.seededUnion_offsets_isLittleO",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.endpointRates_admissible",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.approachingPath_continuous",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.approachingPath_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.approachingPath_hasDerivAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.approachingPath_integralSolution",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.approachingPath_globalPositive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.approachingPath_outside_tight_target",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.approachingPath_not_eventuallyIn_tight_target",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.isEndotactic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.rhs_at",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.stoichiometricSubspace",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.stoichiometricClass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.targetFamily_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.targetFamily_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.targetFamily_strict_exterior",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.target_face_zero_flux",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.not_strict_target_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.initialLower_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.initial_mem_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.exists_global_positive_in_initial_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.integralSolution_mem_initial_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.eventuallyIn_relaxed_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.uniformPermanent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.rectFamily_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.rectFamily_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.rectFamily_weak_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.rectFamily_midpoint_strict",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.tightInitialLower_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.tight_initial_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.tightInitialTrap_carrier",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.integralSolution_mem_tight_initial_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.integralSolution_mem_tight_target",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.SlackBox.uniformPermanent_via_weak_traps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.polygon_nonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.polygon_subset_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.polygon_isCompact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.rhs_coordinates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.star_endotactic",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.lower_x_face",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.lower_y_face",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.upper_y_face",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.mass_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.upper_mass_face",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.family_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.family_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.family_enlarged_subset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.family_dual_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.family_compact_from_dual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.rateBox_of_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.rhs_at",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.family_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.exists_global_positive_in_polygon",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.positiveWellPosed_in_polygon",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.integralSolution_stays_in_polygon",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.initialFamily_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.initialFamily_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.initialFamily_enlarged_subset",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.initialFamily_dual_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.exists_global_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.absorbingFamily_value",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.absorbingFamily_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.absorbingFamily_capped",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.absorbingFamily_flux_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.eventuallyIn_polygon",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.stoichiometricSubspace",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.positiveClass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.StarCertificate.uniformPermanent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.intervalIntegral_mem_subspace",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.IsIntegralSolution.sub_initial_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.IsGlobalPositiveSolution.mem_positiveClass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniformPermanent_of_affine_plateau",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.dot_rhs_eq_zero_of_projections",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.affineFaceCertificate_of_projections",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.affine_branch_strip_of_face",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.affine_strip_of_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_affine_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_affine_face_certificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.negativeMass_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.projection_smul_direction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.negativeMass_smul",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exponentialPoint_flux_pos_of_directionalCertificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_uniform_directional_flux_threshold",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.exists_fixed_directionalCertificate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.rhs_joint_contDiff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.rhs_uniform_lipschitzOn",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.rhs_uniform_lipschitzOn_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classWeakAffineFaceCertificate_of_strict",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.classWeakAffineFaceCertificate_normalizeAt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_normalized_face_deficit_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_normalized_weak_class_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_global_positive_of_weak_class_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.positiveWellPosed_of_weak_class_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.value_forward_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.exists_strict_or_equality_anchor",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.AffineFamily.exists_feasible_forward_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.class_mem_forward_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.rhs_projection_update",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.projections_zero_of_flux_zero_on_box",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.equality_face_conserved_of_weak_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.exists_classRelativeAnchor_of_weak_faces",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.WeakFiniteClassTrap.exists_global_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.WeakFiniteClassTrap.positiveWellPosed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.WeakFiniteClassTrap.integralSolution_mem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.Network.uniformPermanent_of_weak_finite_class_traps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.zeroForcingTolerance_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.zeroForcingTolerance_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.zeroForcingTolerance_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.zeroForcingTolerance_nonzero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.sequentialActivityBound_tolerance_mono",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "Endotactic.ScaledAffineFamily.exists_zero_active_neighborhood",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

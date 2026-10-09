@@ -1,0 +1,54 @@
+{
+  "success": true,
+  "date_jst": "2026-10-08",
+  "modules": 115,
+  "theorems": 740,
+  "new_modules": 7,
+  "new_theorems": 23,
+  "new_declarations": 25,
+  "main_proof_declarations": [
+    "Endotactic.Network.uniformPermanent_of_endotactic",
+    "Endotactic.measurable_extended_permanence",
+    "Endotactic.extended_permanence",
+    "Endotactic.original_extended_permanence"
+  ],
+  "blueprint_nodes": 136,
+  "blueprint_declarations": 750,
+  "roadmap_stages": 18,
+  "remaining_hours": [
+    30,
+    68
+  ],
+  "build_seconds": 44.875,
+  "build_jobs": 3515,
+  "current_source_hashes_match": true,
+  "proof_holes_in_library": 0,
+  "transitive_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "original_statement_support_unchanged": true,
+  "general_scale_family_constructed_without_oracle": true,
+  "general_common_compact_absorption_proved_without_oracle": true,
+  "all_three_existing_project_conjecture_types_locally_proved": true,
+  "compact_set_chosen_before_rates_and_initial_states": true,
+  "scope": {
+    "proved": "The exact pre-existing MeasurableExtendedPermanenceConjecture, ExtendedPermanenceConjecture and OriginalExtendedPermanenceConjecture types have local Lean proofs with no affine/carrier/sign/absorption oracle input.",
+    "model": "Finite natural-exponent mass-action networks in d>0, the existing negative-projection/lower-positive-source endotactic condition, bounded measurable rate paths, positive stoichiometric classes. The compact set is chosen before both rates and positive initial states, with trajectory-dependent finite entry time.",
+    "not_claimed": "A real-exponent power-law/differential-inclusion formalization, independent semantic equivalence with every original informal convention, an upstream reviewed/publication-ready proof, or an informal mathematical novelty claim.",
+    "remaining": "Original convention comparison, clean independent reproduction/audit, fixed proof-commit publication/CI, FC support port and category/proof-link synchronization, upstream CI/PR/review/adoption.",
+    "external_submission_performed": false
+  },
+  "independent_source_convention_audit_complete": false,
+  "independent_clean_reproduction_complete": false,
+  "fc_draft_statement_types_unchanged": true,
+  "fc_draft_comment_updated": true,
+  "fc_draft_check_rerun": true,
+  "fc_draft_check_passed_with_two_intended_holes": true,
+  "fc_draft_legacy_category_unsynchronized": true,
+  "fc_upstream_ci_and_pr_complete": false,
+  "external_submission_performed": false,
+  "official_blueprint_renderer_executed": false,
+  "local_html_links_checked": 18
+}

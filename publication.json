@@ -1,0 +1,62 @@
+{
+  "status": "local package verified",
+  "repository_url": null,
+  "public_proof_commit": null,
+  "style_reference": "https://github.com/KitaKen1/bapat-lal-q-permanent-lean",
+  "style_reference_commit": "c459861078d42d22dd18144a103b2aee286dbf53",
+  "proof_entrypoint": "lean/EndotacticPublication/FCPresentation.lean",
+  "fc_style_statement": "FClikelean/EndotacticPermanence.lean",
+  "lean4web": "lean4web/EndotacticPermanenceLean4Web.lean",
+  "external_publication_performed": false,
+  "checked_at_utc": "2026-10-09T01:46:28.480536+00:00",
+  "audit": "lean/evidence/build_results.json",
+  "all_project_theorem_count": 754,
+  "proof_holes": 0,
+  "fc_statement_stub_count": 2,
+  "compiled_fc_targets_match": true,
+  "compiled_fc_support_definitions_match": true,
+  "proof_scope": "finite natural-exponent networks, positive dimensions, bounded measurable rates",
+  "lean_version": "leanprover/lean4:v4.33.1",
+  "lean4web_version": "leanprover/lean4:v4.35.0-rc4",
+  "browser_execution_performed": false,
+  "independent_original_convention_review_complete": false,
+  "planned_repository_url": "https://github.com/KitaKen1/endotactic-permanence-lean",
+  "planned_lean4web_link": "https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Fendotactic-permanence-lean%2Fmain%2Flean4web%2FEndotacticPermanenceLean4Web.lean",
+  "fc_definitions_inline": true,
+  "fc_only_import": "FormalConjecturesUtil",
+  "fc_definition_count": 12,
+  "expanded_type_aliases": [
+    "Endotactic.State",
+    "Endotactic.Complex"
+  ],
+  "compiled_expression_comparison_count": 17,
+  "fc_all_definitions_contribute_to_targets": true,
+  "fc_namespace": "Endotactic",
+  "fc_single_namespace": true,
+  "fc_independent_presentation": true,
+  "fc_def_count": 11,
+  "fc_structure_count": 1,
+  "fc_inlined_definitions": [
+    "Endotactic.Network.projection",
+    "Endotactic.Network.sourceLevel",
+    "Endotactic.monomial",
+    "Endotactic.Network.stoichiometricSubspace",
+    "Endotactic.Network.IsIntegralSolution",
+    "Endotactic.EventuallyIn"
+  ],
+  "fc_presentation_correspondence": {
+    "presentation_definition_comparison_count": 12,
+    "comparison": "Compiled types and definition bodies match the complete-proof presentation, modulo its EndotacticFC namespace.",
+    "equivalent_definitions": [
+      "Endotactic.Network.PermanentForRates",
+      "Endotactic.Network.UniformPermanent"
+    ],
+    "network_conversion_roundtrips_checked": true,
+    "compact_coordinate_equivalence_checked": true,
+    "proof_adapter": "lean/EndotacticPublication/FCPresentation.lean",
+    "compact_equivalence": "lean/EndotacticPublication/CoordinateBounds.lean"
+  },
+  "fc_finite_reaction_indices": true,
+  "fc_coordinate_bounds": true,
+  "compact_equivalence": "lean/EndotacticPublication/CoordinateBounds.lean"
+}

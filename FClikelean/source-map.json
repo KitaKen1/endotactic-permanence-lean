@@ -1,0 +1,68 @@
+{
+  "metadata_script": "lean/scripts/make_fc_support.py",
+  "lean_draft_is_independent_source": true,
+  "single_file": true,
+  "statement": "FClikelean/EndotacticPermanence.lean",
+  "imports": [
+    "FormalConjecturesUtil"
+  ],
+  "namespace": "Endotactic",
+  "single_namespace": true,
+  "definition_bodies_preserved_modulo_type_aliases": false,
+  "expanded_type_aliases": {
+    "Endotactic.State": "Fin d \u2192 \u211d",
+    "Endotactic.Complex": "Fin d \u2192 \u2115"
+  },
+  "presentation_changes": {
+    "Endotactic.Network": "Uses Fin m reaction indices instead of an arbitrary finite type.",
+    "Endotactic.dot": "Uses mathlib dotProduct directly.",
+    "Endotactic.realComplex": "Casts coefficients to real numbers directly.",
+    "Endotactic.Network.PermanentForRates": "Uses positive coordinate bounds. Equivalence with compact absorption is proved in Lean.",
+    "Endotactic.Network.UniformPermanent": "Uses common positive coordinate bounds for all measurable rate paths. Equivalence with common compact absorption is proved in Lean."
+  },
+  "inlined_definitions": [
+    "Endotactic.Network.projection",
+    "Endotactic.Network.sourceLevel",
+    "Endotactic.monomial",
+    "Endotactic.Network.stoichiometricSubspace",
+    "Endotactic.Network.IsIntegralSolution",
+    "Endotactic.EventuallyIn"
+  ],
+  "excluded_unused_definitions": [
+    "Endotactic.ExtendedPermanenceConjecture",
+    "Endotactic.MeasurableExtendedPermanenceConjecture",
+    "Endotactic.OriginalExtendedPermanenceConjecture"
+  ],
+  "sources": {
+    "Endotactic/Network.lean": {
+      "original_sha256": "648908c5be6219792be37af63dd7caed671600c225d8b9f4ed8bd19d09daaea9",
+      "declarations": [
+        "Endotactic.Network",
+        "Endotactic.Network.vector",
+        "Endotactic.Network.IsEndotactic",
+        "Endotactic.Positive",
+        "Endotactic.Network.positiveClass",
+        "Endotactic.Network.rhs"
+      ]
+    },
+    "Endotactic/Permanence.lean": {
+      "original_sha256": "366db0318636b5eb09c8497410329c732704126e0e068037eca9d5076e3f2ce6",
+      "declarations": [
+        "Endotactic.AdmissibleRates",
+        "Endotactic.LocallyPiecewiseDifferentiableRates",
+        "Endotactic.Network.IsGlobalPositiveSolution",
+        "Endotactic.Network.PositiveWellPosed",
+        "Endotactic.Network.UniformPermanent",
+        "Endotactic.Network.PermanentForRates"
+      ]
+    }
+  },
+  "definitions_sha256": "ae1b5c8a3a9de479177f514b69311c3577d37f93545158bbf6e97673c3735ca8",
+  "definition_count": 12,
+  "def_count": 11,
+  "structure_count": 1,
+  "finite_reaction_indices": true,
+  "permanence_presentation": "eventual positive coordinate bounds",
+  "proof_presentation": "lean/EndotacticPublication/FCPresentation.lean",
+  "compact_equivalence": "lean/EndotacticPublication/CoordinateBounds.lean"
+}

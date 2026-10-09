@@ -1,0 +1,513 @@
+{
+  "generator": "lean/scripts/make_lean4web.py",
+  "modules": 83,
+  "lines": 9323,
+  "renames": {
+    "if_pos": "ite_eq_left",
+    "if_neg": "ite_eq_right",
+    "dif_pos": "dite_eq_left",
+    "dif_neg": "dite_eq_right",
+    "if_true": "ite_true"
+  },
+  "source_map": [
+    {
+      "source": "Endotactic/Network.lean",
+      "source_sha256": "648908c5be6219792be37af63dd7caed671600c225d8b9f4ed8bd19d09daaea9",
+      "first_line": 36,
+      "last_line": 107
+    },
+    {
+      "source": "Endotactic/Permanence.lean",
+      "source_sha256": "366db0318636b5eb09c8497410329c732704126e0e068037eca9d5076e3f2ce6",
+      "first_line": 108,
+      "last_line": 228
+    },
+    {
+      "source": "EndotacticPublication/Statement.lean",
+      "source_sha256": "2df8a9c7ae238339ccc4a118c2b6328f05f87959d7eaf3624c1319b6561a6b6c",
+      "first_line": 229,
+      "last_line": 242
+    },
+    {
+      "source": "Endotactic/AffinePlateau.lean",
+      "source_sha256": "83260411cfcbdfdd4b27f9003505cdea168e64fa588fb69af6e6f732dd0901b3",
+      "first_line": 243,
+      "last_line": 343
+    },
+    {
+      "source": "Endotactic/EssentialSource.lean",
+      "source_sha256": "c7cc73585b62da5e88f5e3c52ab277e3113c463a2a70a1f8d35d98a9a541d057",
+      "first_line": 344,
+      "last_line": 422
+    },
+    {
+      "source": "Endotactic/FluxBound.lean",
+      "source_sha256": "745a7849211471d2b8273fcc7d8709406477c7d4850a9a1647342408097d93ef",
+      "first_line": 423,
+      "last_line": 519
+    },
+    {
+      "source": "Endotactic/MonomialOrder.lean",
+      "source_sha256": "8eeffdce508f897aee3fe47b2fcfd4491b2a6f0634e38a0cd38896bba10f1f97",
+      "first_line": 520,
+      "last_line": 578
+    },
+    {
+      "source": "Endotactic/CompactSequentialExclusion.lean",
+      "source_sha256": "2da6928280f1cc7db93211819c2030d445b4ee3285477af39f42583cdff514b0",
+      "first_line": 579,
+      "last_line": 649
+    },
+    {
+      "source": "Endotactic/ScaledAffineActivity.lean",
+      "source_sha256": "700ad29786da2d9303f03605879c5b857cdf4f3164d9a23b94d0a6dd06e5a07a",
+      "first_line": 650,
+      "last_line": 739
+    },
+    {
+      "source": "Endotactic/ScaleLimits.lean",
+      "source_sha256": "1459434ba2a60369bb5a491a25e0099e17247b8906061febeb0da723634b7631",
+      "first_line": 740,
+      "last_line": 827
+    },
+    {
+      "source": "Endotactic/ActivityLimitNeighborhood.lean",
+      "source_sha256": "79cf55fe4092e0406f5980dda36190ec7aa7fe0c15a10cb42cde1b5004a6dc79",
+      "first_line": 828,
+      "last_line": 957
+    },
+    {
+      "source": "Endotactic/FiniteMinimum.lean",
+      "source_sha256": "da65d991f6ce6060f79b5aaf92448871def78d46cc39253497a941e97300ef1b",
+      "first_line": 958,
+      "last_line": 1109
+    },
+    {
+      "source": "Endotactic/ZeroSlopeActivity.lean",
+      "source_sha256": "39a08ebf7456f319b94409ff745eb382b2e306fe74fc205640cdc496bad61852",
+      "first_line": 1110,
+      "last_line": 1197
+    },
+    {
+      "source": "Endotactic/LogarithmicBox.lean",
+      "source_sha256": "f3720b9a857fd80c64ca51421638b951e8f1a77a6cdc0d1cbe98d1e22d8a5e9d",
+      "first_line": 1198,
+      "last_line": 1304
+    },
+    {
+      "source": "Endotactic/LinearGeometry.lean",
+      "source_sha256": "a391921704ad9dc64f828c168c75e044a9cb72362fe907f767669c04edb56c64",
+      "first_line": 1305,
+      "last_line": 1358
+    },
+    {
+      "source": "Endotactic/ScalarBarrier.lean",
+      "source_sha256": "05a6a91a47c1f730b49af133c3d900224d9dc7f231ce4f993a20aa38812dcd74",
+      "first_line": 1359,
+      "last_line": 1426
+    },
+    {
+      "source": "Endotactic/AbsoluteBarrier.lean",
+      "source_sha256": "27c3f6caba719bd719e304787da87e3b178c96b29964b88da21836892f31c666",
+      "first_line": 1427,
+      "last_line": 1491
+    },
+    {
+      "source": "Endotactic/IntegralTrajectory.lean",
+      "source_sha256": "c0f1503e4bc923e1c98db46e2cce59b5ed7f4e3fbdf0483370e81502e49392b9",
+      "first_line": 1492,
+      "last_line": 1663
+    },
+    {
+      "source": "Endotactic/ScaledZeroCap.lean",
+      "source_sha256": "5d8988837c95a0b00a3f3489bca22e03e0a4bd599c45680c7501e1a716459993",
+      "first_line": 1664,
+      "last_line": 1789
+    },
+    {
+      "source": "Endotactic/ScaleIteration.lean",
+      "source_sha256": "6db9b602431d335e6213ca4b9723d06af1ac625cd19a24c93fd49c1e947ff460",
+      "first_line": 1790,
+      "last_line": 1839
+    },
+    {
+      "source": "Endotactic/PowerBoxGeometry.lean",
+      "source_sha256": "849f0800b509c082af1868f95ea6ecf3a63112e69063e7723f6e799730a5e96e",
+      "first_line": 1840,
+      "last_line": 1922
+    },
+    {
+      "source": "Endotactic/NarrowZeroCap.lean",
+      "source_sha256": "303aa14910e6a51fd85dd3607a35b5495f3c6babfddbbe837941db31c44ecfa2",
+      "first_line": 1923,
+      "last_line": 1965
+    },
+    {
+      "source": "Endotactic/AffineCap.lean",
+      "source_sha256": "b9b01a2c8a41117c6c742bf9ccdc75bc6da55eb87289274f388b0e475059b289",
+      "first_line": 1966,
+      "last_line": 2048
+    },
+    {
+      "source": "Endotactic/KineticsRegularity.lean",
+      "source_sha256": "471c118d2c6ba170283bb3fc5db193417fa4358f261b78315ab3843567be5485",
+      "first_line": 2049,
+      "last_line": 2083
+    },
+    {
+      "source": "Endotactic/UniformKinetics.lean",
+      "source_sha256": "8c4451c185974f1a09b57cb9614b5ebe85b20bc362f617763b7141ca75b68efc",
+      "first_line": 2084,
+      "last_line": 2128
+    },
+    {
+      "source": "Endotactic/CompactAbsorption.lean",
+      "source_sha256": "8012fd552f744971290df66fd0ce5b6253a761ebc00886f947e8b53578996965",
+      "first_line": 2129,
+      "last_line": 2231
+    },
+    {
+      "source": "Endotactic/LateCompactAbsorption.lean",
+      "source_sha256": "f99c004fc5633be81db1694a9783defdb27b50a0398746e0c3c3026904321549",
+      "first_line": 2232,
+      "last_line": 2324
+    },
+    {
+      "source": "Endotactic/Stoichiometry.lean",
+      "source_sha256": "ce0e63c4f308cacb3e75a33a14d77c778a29265b9e7dc55a6d6af14aa42df83b",
+      "first_line": 2325,
+      "last_line": 2398
+    },
+    {
+      "source": "Endotactic/NonlinearVolterra.lean",
+      "source_sha256": "b6f6fb84d6dbeae004beed860767782cbe3a54f868158ae515a41e85e2b95ec3",
+      "first_line": 2399,
+      "last_line": 2553
+    },
+    {
+      "source": "Endotactic/BoxKinetics.lean",
+      "source_sha256": "2249fa35e2cce431943cebf17929310b8cf3b26844707d19081cda4f8eb91623",
+      "first_line": 2554,
+      "last_line": 2664
+    },
+    {
+      "source": "Endotactic/LocalExistence.lean",
+      "source_sha256": "d9ac7cc577023ab8bc18927419cf09489eeda1aa8303b7e5b0a4eab458852c42",
+      "first_line": 2665,
+      "last_line": 2825
+    },
+    {
+      "source": "Endotactic/IntegralUniqueness.lean",
+      "source_sha256": "38afe04d5360df181bbf330298b14e1c85263e2844df88b200ed5f310f5d7945",
+      "first_line": 2826,
+      "last_line": 2971
+    },
+    {
+      "source": "Endotactic/GlobalVolterra.lean",
+      "source_sha256": "5599663fe807489e68717c329902efa5317666f64482cbf27fe1d738d8c46a3c",
+      "first_line": 2972,
+      "last_line": 3206
+    },
+    {
+      "source": "Endotactic/BoxInvariance.lean",
+      "source_sha256": "0fdc9c181405e580175cbc6c1faa4643fb0529173fe4d3b0a1fc06cf106818c1",
+      "first_line": 3207,
+      "last_line": 3386
+    },
+    {
+      "source": "Endotactic/PolyhedralInvariance.lean",
+      "source_sha256": "c2c58cbb98bb943690833bc9a07260a007a60f576879a86d0c79da94f8de3fd7",
+      "first_line": 3387,
+      "last_line": 3542
+    },
+    {
+      "source": "Endotactic/StrictFaceTrap.lean",
+      "source_sha256": "57106da3c14eafb53448f8916d492fec70ebb80dceea3c8fd2ae5db7b7483871",
+      "first_line": 3543,
+      "last_line": 3697
+    },
+    {
+      "source": "Endotactic/AffineRobustness.lean",
+      "source_sha256": "c848686aac1dc1f475773a5f43357d4094a2d8fdefb863f6a2f5e84e1d7eb268",
+      "first_line": 3698,
+      "last_line": 3855
+    },
+    {
+      "source": "Endotactic/RelativeAffineRobustness.lean",
+      "source_sha256": "ec09378e892f38007e195b3a54eaaffafda489742ca77167c1fb5eb3d54b8212",
+      "first_line": 3856,
+      "last_line": 3968
+    },
+    {
+      "source": "Endotactic/ClassInvariance.lean",
+      "source_sha256": "a8438fcccb166c013426337e80a4285e97199b6d4c78e9c49b431c6625b8467a",
+      "first_line": 3969,
+      "last_line": 4070
+    },
+    {
+      "source": "Endotactic/ClassFaceTrap.lean",
+      "source_sha256": "7fbfe60d55c8edb523384a103a1f5a25050826fa10d60e1440b6ba00fc9ae35f",
+      "first_line": 4071,
+      "last_line": 4238
+    },
+    {
+      "source": "Endotactic/CompactTrapPermanence.lean",
+      "source_sha256": "7e42d4d39cea0fbfcae1cedea72c046c154a09d17f1a4f1bfe09ed53c975f260",
+      "first_line": 4239,
+      "last_line": 4338
+    },
+    {
+      "source": "Endotactic/DirectionalDominance.lean",
+      "source_sha256": "97bdb6f5cae99ac27a9bc179735454424e8e72337cb718996712e15475d901e6",
+      "first_line": 4339,
+      "last_line": 4386
+    },
+    {
+      "source": "Endotactic/UniformDirectionalCertificate.lean",
+      "source_sha256": "01c4d1b6a04b6d7d476f250e320fc4f9c7b082ac7a395df37e798d47c330cb58",
+      "first_line": 4387,
+      "last_line": 4524
+    },
+    {
+      "source": "Endotactic/GeometryMargins.lean",
+      "source_sha256": "d3c0906bbceac6563b13bed22fbaa91d0e42f251694f20e2728348e9d0e44542",
+      "first_line": 4525,
+      "last_line": 4572
+    },
+    {
+      "source": "Endotactic/FiniteDirectionalCover.lean",
+      "source_sha256": "e2ed366611b59306815c06fe7cd33da035414cee53cc21dab6f8ca961b49a11e",
+      "first_line": 4573,
+      "last_line": 4655
+    },
+    {
+      "source": "Endotactic/FiniteSlopeDominance.lean",
+      "source_sha256": "331008bfc9b9f488463205690f3ebaafbdff73e4dd1eed305922b8ea69e0993e",
+      "first_line": 4656,
+      "last_line": 4734
+    },
+    {
+      "source": "Endotactic/ActivityFluxBridge.lean",
+      "source_sha256": "c016690c61ea0d009a0c9d9983230f6a776c5254f8192f14778f792c4eee35ef",
+      "first_line": 4735,
+      "last_line": 4900
+    },
+    {
+      "source": "Endotactic/ScaleTrapPermanence.lean",
+      "source_sha256": "fa6add1f122005286aa377ededa224e67a90cce8611a6ff784c7d28dfe322efd",
+      "first_line": 4901,
+      "last_line": 5052
+    },
+    {
+      "source": "Endotactic/ExponentMinimum.lean",
+      "source_sha256": "38ef1fa7080a73ce66a667ba05aec113603af711c3c769ccb3d5123939e2af5b",
+      "first_line": 5053,
+      "last_line": 5168
+    },
+    {
+      "source": "Endotactic/CoordinateEmbedding.lean",
+      "source_sha256": "0571df6dc62f27c2a1207e81d7671a061ec7b514003e689652427ac67f0257ac",
+      "first_line": 5169,
+      "last_line": 5300
+    },
+    {
+      "source": "Endotactic/RaisedCoordinateSupports.lean",
+      "source_sha256": "72804fc8cb4cfe5981fbbefd36841687de9768507b34afc0478b334f9d43d873",
+      "first_line": 5301,
+      "last_line": 5381
+    },
+    {
+      "source": "Endotactic/MovingPowerAsymptotics.lean",
+      "source_sha256": "393a731d6fc85a0ca34cd746d4d64330aa7646076b8e8f78ff2c7e291753d333",
+      "first_line": 5382,
+      "last_line": 5463
+    },
+    {
+      "source": "Endotactic/OffsetDecayNeighborhood.lean",
+      "source_sha256": "9d88b2bc0eb72282f307d814ed5b1c7b1c856d53dd8be968a4044782dcbeade4",
+      "first_line": 5464,
+      "last_line": 5554
+    },
+    {
+      "source": "Endotactic/AffinePowerComparison.lean",
+      "source_sha256": "c5f0aba71588cc7a301de04568d24e1b6ea1c4bb642ac47bbe276b5949a27556",
+      "first_line": 5555,
+      "last_line": 5723
+    },
+    {
+      "source": "Endotactic/AffineCoordinateLift.lean",
+      "source_sha256": "e0dd457f4b723b5ae223b6b5217b6a388ab84f7f73db2df708a56d2143cc6e2f",
+      "first_line": 5724,
+      "last_line": 5844
+    },
+    {
+      "source": "Endotactic/FiniteLiftTolerance.lean",
+      "source_sha256": "e32c970a6f6d9ac53b1860487b5d597f19bba9f7c9c3461abfd06992f92e278c",
+      "first_line": 5845,
+      "last_line": 5920
+    },
+    {
+      "source": "Endotactic/AffineBlockUnion.lean",
+      "source_sha256": "9a9107331d31beb3693e99b328253ca656ce088d49f4a6b72a301bb9df4280d5",
+      "first_line": 5921,
+      "last_line": 6063
+    },
+    {
+      "source": "Endotactic/AffineActiveCompetitors.lean",
+      "source_sha256": "5212bb9d4b2550786a7a6dfb57b0347571a8296c5c37426e9a27e6b8e0408298",
+      "first_line": 6064,
+      "last_line": 6226
+    },
+    {
+      "source": "Endotactic/ScaledActivityExamples.lean",
+      "source_sha256": "940ec04446ab5c1299cf80308239488b603c52d549a0f204593a63c7c98ecf51",
+      "first_line": 6227,
+      "last_line": 6350
+    },
+    {
+      "source": "Endotactic/FixedMinimumSeeds.lean",
+      "source_sha256": "87a6a8edd0e73c8011ce56aaed52d4a3d45cf38e5c5bce2293a882c77febab58",
+      "first_line": 6351,
+      "last_line": 6452
+    },
+    {
+      "source": "Endotactic/SeededAffineUnion.lean",
+      "source_sha256": "a512783441354f369476ce46c9834270a7b20d3df40cceb28eed7145f57e4c51",
+      "first_line": 6453,
+      "last_line": 6567
+    },
+    {
+      "source": "Endotactic/FixedMinimumAssembly.lean",
+      "source_sha256": "e94ef09b1d9c5d28f301da86b63e1540b37cb33da72279bb557090c21d11e171",
+      "first_line": 6568,
+      "last_line": 6871
+    },
+    {
+      "source": "Endotactic/AffineInductionData.lean",
+      "source_sha256": "4ab935c8c9b3fb590c66819d56ec273ecaa6f64bf57568023cd6de9dfbdbfa1e",
+      "first_line": 6872,
+      "last_line": 7006
+    },
+    {
+      "source": "Endotactic/AffineSupportInduction.lean",
+      "source_sha256": "083d4c26189892df32c17f2219f88ded55bb2caef5c75f1c211e2ca6b95ae1c0",
+      "first_line": 7007,
+      "last_line": 7149
+    },
+    {
+      "source": "Endotactic/FixedMinimumExistence.lean",
+      "source_sha256": "5d9db241b1367f834effa5e6224b1c24a209634f5bc804976a70607ad9d0b56e",
+      "first_line": 7150,
+      "last_line": 7294
+    },
+    {
+      "source": "Endotactic/AffineOffsetShift.lean",
+      "source_sha256": "cff89d479e62ded1ed1fe12cbfd1500681ea71c28df6222866dbd22c05d3f221",
+      "first_line": 7295,
+      "last_line": 7379
+    },
+    {
+      "source": "Endotactic/AffineShiftComparisons.lean",
+      "source_sha256": "30643908e970a999e6b291d72201da7577a4044d600622e7f8f2b8633fff91a8",
+      "first_line": 7380,
+      "last_line": 7454
+    },
+    {
+      "source": "Endotactic/MinimumShiftChain.lean",
+      "source_sha256": "92b9367d4854da81bb72f2fc7624379310497d43438f0fc8082ae058ab168418",
+      "first_line": 7455,
+      "last_line": 7669
+    },
+    {
+      "source": "Endotactic/MinimumBandReduction.lean",
+      "source_sha256": "d073a6fdfcb3d9d37e71a739bdc8a38126764e6a22c4fa3d2d5a84718f8a8389",
+      "first_line": 7670,
+      "last_line": 7740
+    },
+    {
+      "source": "Endotactic/FiniteMinimumBandCover.lean",
+      "source_sha256": "1c0395369e3951b9d3b8798abe01bae8b421568024349832579969c6d76c88b6",
+      "first_line": 7741,
+      "last_line": 7824
+    },
+    {
+      "source": "Endotactic/OrderedMinimumBandCover.lean",
+      "source_sha256": "3465a24eefceee649bbd4e66e49f5318ce34d7967642fea7cc1073f6e1d34af7",
+      "first_line": 7825,
+      "last_line": 7941
+    },
+    {
+      "source": "Endotactic/MinimumBandSelection.lean",
+      "source_sha256": "29a33d16937a56e4b9f33c0edd60443a79ec3f01f9eb9dc1da2de8324b414b6e",
+      "first_line": 7942,
+      "last_line": 8012
+    },
+    {
+      "source": "Endotactic/AffineApproximationExistence.lean",
+      "source_sha256": "5f5f14d8636aa1cf19896a59df4c189195b22d6c34bab13e59f40e7cf936af41",
+      "first_line": 8013,
+      "last_line": 8078
+    },
+    {
+      "source": "Endotactic/ScaleTrapConstruction.lean",
+      "source_sha256": "808020281469a5d149d0dd3796900c25d6660a503d6c1bbf08dd8828c9048923",
+      "first_line": 8079,
+      "last_line": 8221
+    },
+    {
+      "source": "Endotactic/GeneralPermanence.lean",
+      "source_sha256": "a04f3868fd999669d0c42c431da63c391f69e8d33289b723c7686d671f682c62",
+      "first_line": 8222,
+      "last_line": 8258
+    },
+    {
+      "source": "EndotacticPublication/Main.lean",
+      "source_sha256": "8e77345a3c7458ebca53d808491a7a0b66761a3b858ba7053a79f76be3d5371d",
+      "first_line": 8259,
+      "last_line": 8313
+    },
+    {
+      "source": "EndotacticPublication/CoordinateBounds.lean",
+      "source_sha256": "907d08f9e79bab1f38562567d27c1f0808945213f9dd36f94b2dc081de58c3df",
+      "first_line": 8314,
+      "last_line": 8453
+    },
+    {
+      "source": "EndotacticPublication/FCPresentation.lean",
+      "source_sha256": "c3bae85d2b9edf0663d1c81932f7d97920fa29a95d8095c3e23d30c0ce7c2f10",
+      "first_line": 8454,
+      "last_line": 8632
+    },
+    {
+      "source": "Endotactic/DirectionalWallCounterexample.lean",
+      "source_sha256": "9c6607eca3d6b491f6e1d8a429d7e0c032026c3ac032aa902d0fa9bb0a598aae",
+      "first_line": 8633,
+      "last_line": 8803
+    },
+    {
+      "source": "Endotactic/AffineDualBounds.lean",
+      "source_sha256": "f37947fc8159d6f696cc380f73f1b0e6c86070143b5f5f206ff043844d12a25b",
+      "first_line": 8804,
+      "last_line": 8926
+    },
+    {
+      "source": "Endotactic/ClassDualBounds.lean",
+      "source_sha256": "9da83399503e58b1bd95347668fe09de1fdfd1064a0bb1f566dcb3fe6de73314",
+      "first_line": 8927,
+      "last_line": 9041
+    },
+    {
+      "source": "Endotactic/ConversionPermanence.lean",
+      "source_sha256": "bfca502abd1bb4475198ac869706c01fe329dd00e8fca4cf634fdad87dda9006",
+      "first_line": 9042,
+      "last_line": 9294
+    },
+    {
+      "source": "Endotactic/GeneralPermanenceExamples.lean",
+      "source_sha256": "182041bb9084d2b01399795a4a964a1a28183bf41c3590667f0e88f2fd6c44a6",
+      "first_line": 9295,
+      "last_line": 9320
+    }
+  ],
+  "output_sha256": "4018c4d22a3efe6800ed7e6d61956be6e04e8f62bb7f9ecedadef3c9b14da3a9"
+}

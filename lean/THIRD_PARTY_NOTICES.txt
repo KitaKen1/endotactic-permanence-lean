@@ -1,0 +1,17 @@
+Endotactic/NonlinearVolterra.lean adapts interval clamping and continuous-path
+extension from Scott Armstrong and Vlad Vicol's LeanPool linear Volterra file:
+LeanPool/AnomalousDiffusion/AVenhance/Infra/ODE/Linear/Existence.lean
+Commit: bbc67ff1e3ac4fc6a969daf42985a0d8f988d0b8
+https://github.com/LeanPool/lean-pool/blob/bbc67ff1e3ac4fc6a969daf42985a0d8f988d0b8/LeanPool/AnomalousDiffusion/AVenhance/Infra/ODE/Linear/Existence.lean
+
+Copyright (c) 2026 Scott Armstrong and Vlad Vicol. All rights reserved.
+Authors: Scott Armstrong and Vlad Vicol
+Released under the Apache License, Version 2.0.
+The complete license text is in licenses/LeanPool-Apache-2.0.txt.
+The upstream repository NOTICE is preserved in licenses/LeanPool-NOTICE.txt.
+
+The local file is modified: it handles nonlinear bounded measurable fields,
+uses direct contraction on a sufficiently short interval, and connects the
+fixed point to an explicit integral-solution predicate.
+LeanPool is not imported as a dependency. The rest of the mass-action cutoff,
+local-existence and distance-primitive uniqueness proofs are local additions.

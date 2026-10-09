@@ -1,0 +1,16 @@
+name = "endotactic_fc_statements"
+version = "0.1.0"
+defaultTargets = ["EndotacticPermanence"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+warn.sorry = false
+
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/google-deepmind/formal-conjectures"
+rev = "89294ea02bd7cd678d59984add52cb4baef3dbf4"
+
+[[lean_lib]]
+name = "EndotacticPermanence"
