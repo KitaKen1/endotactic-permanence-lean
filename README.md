@@ -21,7 +21,7 @@ SubContribution:
    ([appendix](#appendix-relationship-between-the-original-conjecture-and-the-strengthening)).
 
 <!-- PUBLICATION-LINKS:START -->
-**Try it in Lean4Web:** [open the complete proof in one file](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Fendotactic-permanence-lean%2Fmain%2Flean4web%2FEndotacticPermanenceLean4Web.lean) (Lean **v4.35.0-rc4**).
+**Try it in Lean4Web:** [open the complete proof in one file](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Fendotactic-permanence-lean%2Fbfc411af63d0b11b2fd35d6a234249fc56080205%2Flean4web%2FEndotacticPermanenceLean4Web.lean) (Lean **v4.35.0-rc4**).
 <!-- PUBLICATION-LINKS:END -->
 
 ## Formal Conjectures targets

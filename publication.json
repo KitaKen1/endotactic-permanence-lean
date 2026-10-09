@@ -1,14 +1,14 @@
 {
-  "status": "local package verified",
-  "repository_url": null,
-  "public_proof_commit": null,
+  "status": "published package verified",
+  "repository_url": "https://github.com/KitaKen1/endotactic-permanence-lean",
+  "public_proof_commit": "bfc411af63d0b11b2fd35d6a234249fc56080205",
   "style_reference": "https://github.com/KitaKen1/bapat-lal-q-permanent-lean",
   "style_reference_commit": "c459861078d42d22dd18144a103b2aee286dbf53",
   "proof_entrypoint": "lean/EndotacticPublication/FCPresentation.lean",
   "fc_style_statement": "FClikelean/EndotacticPermanence.lean",
   "lean4web": "lean4web/EndotacticPermanenceLean4Web.lean",
-  "external_publication_performed": false,
-  "checked_at_utc": "2026-10-09T01:46:28.480536+00:00",
+  "external_publication_performed": true,
+  "checked_at_utc": "2026-10-09T03:13:09.268563+00:00",
   "audit": "lean/evidence/build_results.json",
   "all_project_theorem_count": 754,
   "proof_holes": 0,
@@ -20,8 +20,6 @@
   "lean4web_version": "leanprover/lean4:v4.35.0-rc4",
   "browser_execution_performed": false,
   "independent_original_convention_review_complete": false,
-  "planned_repository_url": "https://github.com/KitaKen1/endotactic-permanence-lean",
-  "planned_lean4web_link": "https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Fendotactic-permanence-lean%2Fmain%2Flean4web%2FEndotacticPermanenceLean4Web.lean",
   "fc_definitions_inline": true,
   "fc_only_import": "FormalConjecturesUtil",
   "fc_definition_count": 12,
@@ -58,5 +56,15 @@
   },
   "fc_finite_reaction_indices": true,
   "fc_coordinate_bounds": true,
-  "compact_equivalence": "lean/EndotacticPublication/CoordinateBounds.lean"
+  "compact_equivalence": "lean/EndotacticPublication/CoordinateBounds.lean",
+  "published_sources_verified": true,
+  "proof_links": {
+    "extended_permanence": "https://github.com/KitaKen1/endotactic-permanence-lean/blob/bfc411af63d0b11b2fd35d6a234249fc56080205/lean/EndotacticPublication/FCPresentation.lean#L133",
+    "measurable_extended_permanence": "https://github.com/KitaKen1/endotactic-permanence-lean/blob/bfc411af63d0b11b2fd35d6a234249fc56080205/lean/EndotacticPublication/FCPresentation.lean#L151"
+  },
+  "lean4web_link": "https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Fendotactic-permanence-lean%2Fbfc411af63d0b11b2fd35d6a234249fc56080205%2Flean4web%2FEndotacticPermanenceLean4Web.lean",
+  "published_by": "Kenta Kitamura",
+  "published_at_utc": "2026-10-09T03:12:08.147351+00:00",
+  "initial_publication_commit": "bfc411af63d0b11b2fd35d6a234249fc56080205",
+  "last_audit_reused_unchanged_proof_checks": true
 }

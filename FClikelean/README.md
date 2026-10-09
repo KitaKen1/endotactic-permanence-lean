@@ -31,8 +31,7 @@ The research-solved tags describe the displayed locally formalized model;
 original-convention comparison and upstream acceptance remain outstanding.
 
 <!-- PUBLICATION-LINKS:START -->
-Fixed-commit formal_proof URLs are not filled before a public proof commit
-exists. Run the root publication link script after publishing verified sources.
+**Try it in Lean4Web:** [open the complete proof in one file](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Fendotactic-permanence-lean%2Fbfc411af63d0b11b2fd35d6a234249fc56080205%2Flean4web%2FEndotacticPermanenceLean4Web.lean) (Lean **v4.35.0-rc4**).
 <!-- PUBLICATION-LINKS:END -->
 
 The local utility pin is 89294ea02bd7cd678d59984add52cb4baef3dbf4 (Lean v4.33.1).

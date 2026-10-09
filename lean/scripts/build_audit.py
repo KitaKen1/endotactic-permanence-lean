@@ -185,8 +185,11 @@ def main():
             "Stale proof adapter for the independent FC presentation")
 
     proof_sources = {n: h for n,h in sources.items()
-                     if (n.startswith("lean/") and not n.startswith("lean/scripts/"))
+                     if (n.startswith("lean/") and not n.startswith("lean/scripts/")
+                         and n != "lean/evidence/fc_presentation_source_map.json")
                      or n.startswith("lean4web/")}
+    # The generator check above verifies current correspondence metadata.
+    # FC citation attributes can change that metadata without changing proof inputs.
     if args.reuse_compiled_proof_comparison:
         require(all(previous["source_sha256"].get("FClikelean/"+n) == sources["FClikelean/"+n]
                     for n in ["lakefile.toml", "lean-toolchain", "lake-manifest.json"]),
@@ -202,7 +205,8 @@ def main():
             tick = time.monotonic()
             p = subprocess.run(command, cwd=cwd, env=env, text=True, capture_output=True)
             output = (p.stdout + p.stderr).replace(str(ROOT), ".").replace(str(Path.home()), "<home>")
-            log.write(f"\n{label}: {' '.join(command)}\n{output}\nExit: {p.returncode}\n")
+            display_command = " ".join(command).replace(str(ROOT), ".").replace(str(Path.home()), "<home>")
+            log.write(f"\n{label}: {display_command}\n{output}\nExit: {p.returncode}\n")
             log.flush()
             exits[label], outputs[label], seconds[label] = p.returncode, output, round(time.monotonic()-tick, 3)
             print(f"{label}: {'PASS' if p.returncode == 0 else 'FAIL'} ({seconds[label]} s)", flush=True)

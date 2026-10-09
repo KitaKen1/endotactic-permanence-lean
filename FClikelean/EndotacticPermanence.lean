@@ -109,7 +109,8 @@ def Network.PermanentForRates (N : Network d m) (k : Fin m → ℝ → ℝ) (c :
 
 /-- Permanence for endotactic κ-variable mass-action systems [CNP11, Section 4].
 The answer is yes [Ki26]. -/
-@[category research solved, AMS 34 92]
+@[category research solved, AMS 34 92,
+    formal_proof using lean4 at "https://github.com/KitaKen1/endotactic-permanence-lean/blob/bfc411af63d0b11b2fd35d6a234249fc56080205/lean/EndotacticPublication/FCPresentation.lean#L133"]
 theorem extended_permanence :
     answer(True) ↔
       ∀ (d m : ℕ), 0 < d → ∀ N : Network d m,
@@ -122,7 +123,8 @@ theorem extended_permanence :
 
 /-- Common-box permanence for bounded measurable rates.
 The answer is yes [Ki26]. -/
-@[category research solved, AMS 34 92]
+@[category research solved, AMS 34 92,
+    formal_proof using lean4 at "https://github.com/KitaKen1/endotactic-permanence-lean/blob/bfc411af63d0b11b2fd35d6a234249fc56080205/lean/EndotacticPublication/FCPresentation.lean#L151"]
 theorem measurable_extended_permanence :
     answer(True) ↔
       ∀ (d m : ℕ), 0 < d → ∀ N : Network d m,

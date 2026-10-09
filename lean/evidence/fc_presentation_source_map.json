@@ -1,6 +1,6 @@
 {
   "generator": "lean/scripts/make_fc_proof.py",
-  "fc_source_sha256": "4c7d69879a8af1585baf26cff5124778a47c4ec19b30876d100876a090c28d11",
+  "fc_source_sha256": "a47534aba443a8cd0942be8967ada3b1ee32f7866668559b36e3fdf72d59f57e",
   "output": "lean/EndotacticPublication/FCPresentation.lean",
   "output_sha256": "c3bae85d2b9edf0663d1c81932f7d97920fa29a95d8095c3e23d30c0ce7c2f10",
   "target_namespace": "EndotacticFC",

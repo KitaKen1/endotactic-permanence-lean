@@ -50,10 +50,7 @@ def main():
         return
     start, end = "<!-- PUBLICATION-LINKS:START -->", "<!-- PUBLICATION-LINKS:END -->"
     block = (start + "\n**Try it in Lean4Web:** [open the complete proof in one file](" + live +
-             ") (Mathlib with Lean **v4.35.0-rc4**).\n\n" +
-             "[Original-rate target proof](" + proof["extended_permanence"] + ") · " +
-             "[Measurable common-box proof](" + proof["measurable_extended_permanence"] +
-             ")\n" + end)
+             ") (Lean **v4.35.0-rc4**).\n" + end)
     edits = {}
     for name in ["README.md", "lean4web/README.md", "FClikelean/README.md"]:
         p = ROOT / name
