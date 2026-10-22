@@ -171,6 +171,6 @@
     "scripts/negative-controls.sh": "b11672bd73272960befd1ebdeab14521e21f4dadeca66ed61e2b5be9982a6a70",
     "scripts/check-tools.py": "10b494250f17998892c4053166c39177b3ee665c06797ff09747f7de24e155df",
     "sources/pr-statement.lean": "c44267cd5f9293d3af6b9fdb195110cc114355f43d216c0f6c31c92b390377b3",
-    "../.github/workflows/fc7010-comparator.yml": "a0947f619f33eb014c571bca1eb3c12ec19b92e2664f6f23b395d079fed7daf5"
+    "../.github/workflows/fc7010-comparator.yml": "3ea5dc37aabc1d9bd2d5c95d83481992d048b8fac59eeb363fd68c778f18606e"
   }
 }

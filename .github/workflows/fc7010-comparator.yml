@@ -2,7 +2,7 @@ name: FC7010 endotactic permanence verification
 
 on:
   push:
-    branches: [fc7010-endotactic-comparator-20261022]
+    branches: [main, fc7010-endotactic-comparator-20261022]
     paths:
       - 'leanWithComparator/**'
       - '.github/workflows/fc7010-comparator.yml'

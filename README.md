@@ -24,6 +24,19 @@ SubContribution:
 **Try it in Lean4Web:** [open the complete proof in one file](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Fendotactic-permanence-lean%2Fbfc411af63d0b11b2fd35d6a234249fc56080205%2Flean4web%2FEndotacticPermanenceLean4Web.lean) (Lean **v4.35.0-rc4**).
 <!-- PUBLICATION-LINKS:END -->
 
+## Reproducible verification
+
+The [FC #7010 verification harness](leanWithComparator/) compares both original
+proofs at the pinned proof commit with the exact FC revision, checks their axiom
+dependencies, and replays the exported proof environment through Lean's kernel.
+It verifies fixed source revisions rather than the current mathematical sources.
+
+The [verification workflow](https://github.com/KitaKen1/endotactic-permanence-lean/actions/workflows/fc7010-comparator.yml)
+runs when its harness or workflow changes on `main` and can also be started
+manually. [Preserved verification records](verification-results/fc7010/)
+include each run's executed commit, input receipts, per-theorem axiom reports,
+control tests and complete Comparator logs.
+
 ## Formal Conjectures targets
 
 [EndotacticPermanence.lean](FClikelean/EndotacticPermanence.lean) states the
