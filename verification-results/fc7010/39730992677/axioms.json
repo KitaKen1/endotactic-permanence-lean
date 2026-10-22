@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "targets": {
+    "EndotacticFC.extended_permanence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EndotacticFC.measurable_extended_permanence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

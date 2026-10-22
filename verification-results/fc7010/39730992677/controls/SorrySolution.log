@@ -1,0 +1,18 @@
+Running as unit: run-u23.service
+Building Challenge
+⚠ [2/3] Replayed Challenge
+warning: Challenge.lean:1:8: declaration uses `sorry`
+Build completed successfully (3 jobs).
+Exporting #[comparatorControl, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Challenge
+Building SorrySolution
+⚠ [2/3] Built SorrySolution (209ms)
+warning: SorrySolution.lean:1:8: declaration uses `sorry`
+Build completed successfully (3 jobs).
+Exporting #[comparatorControl, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from SorrySolution
+uncaught exception: Illegal axiom detected: 'sorryAx'
+Finished with result: exit-code
+Main processes terminated with: code=exited/status=1
+Service runtime: 1.743s
+CPU time consumed: 1.744s
+Memory peak: 3.7M
+Memory swap peak: 0B

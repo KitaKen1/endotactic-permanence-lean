@@ -1,0 +1,19 @@
+{
+  "id": 12405850866,
+  "name": "fc7010-comparator-39730992677-1",
+  "size_in_bytes": 20563,
+  "url": "https://api.github.com/repos/KitaKen1/endotactic-permanence-lean/actions/artifacts/12405850866",
+  "archive_download_url": "https://api.github.com/repos/KitaKen1/endotactic-permanence-lean/actions/artifacts/12405850866/zip",
+  "expired": false,
+  "created_at": "2026-10-22T06:08:35Z",
+  "expires_at": "2027-01-20T05:57:27Z",
+  "updated_at": "2026-10-22T06:08:35Z",
+  "digest": "sha256:5ca81672ac7a1f0acdb3646bca423ad8daf71f394a71126e366c3de8fa8981a1",
+  "workflow_run": {
+    "id": 39730992677,
+    "repository_id": 1411210766,
+    "head_repository_id": 1411210766,
+    "head_branch": "fc7010-endotactic-comparator-20261022",
+    "head_sha": "bd6ec83aee58ba0f097611a1554b083002bebc74"
+  }
+}

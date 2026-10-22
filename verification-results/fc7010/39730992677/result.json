@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-22T06:08:34.876128+00:00",
+  "harness_commit": "bd6ec83aee58ba0f097611a1554b083002bebc74",
+  "fc_head": "7fa51437bb6717db269e4f5449b2845085c7f545",
+  "proof_commit": "bfc411af63d0b11b2fd35d6a234249fc56080205",
+  "run_url": "https://github.com/KitaKen1/endotactic-permanence-lean/actions/runs/39730992677",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "targets": {
+    "EndotacticFC.extended_permanence": {
+      "statement_and_definitions": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "permitted_axioms_only": true,
+      "kernel_replay": true
+    },
+    "EndotacticFC.measurable_extended_permanence": {
+      "statement_and_definitions": true,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "permitted_axioms_only": true,
+      "kernel_replay": true
+    }
+  },
+  "comparator": true,
+  "axiom_audit": true,
+  "fc_module_build": true,
+  "negative_controls": true,
+  "kernel": "Lean default kernel, v4.33.1",
+  "independent_kernel_implementation": false,
+  "independent_third_party_review": false,
+  "evidence_sha256": {
+    "after/challenge.diff": "e294ce034fbd700097de9060b48188a81b4a5792cdf2adc2bce81f72aab1d351",
+    "after/inputs.json": "ede804077e5590188de3c12cd32abb7ea7b195112a62d25532627f88d97ae508",
+    "after-comparator/challenge.diff": "e294ce034fbd700097de9060b48188a81b4a5792cdf2adc2bce81f72aab1d351",
+    "after-comparator/inputs.json": "ee90656aab73c2711f4434217ee5df29de9d5a953ab9cc00c51ed5692d631d4a",
+    "axioms.json": "e07592c89f7733050103292b16fa74ce909dd1d549fb318596ff4d077f239edb",
+    "axioms.log": "d2486e9407c518fb14f707f3985ec2b54c05024aeb63c5a3b0e80c3bc3863ec9",
+    "before/challenge.diff": "e294ce034fbd700097de9060b48188a81b4a5792cdf2adc2bce81f72aab1d351",
+    "before/inputs.json": "2c7ef37636ee7b6f2861f71dda2e61bab80e417f43c100746c6c2d9cf1f27aa8",
+    "checker-environment.json": "be98e5c291a022ab5ba3f39b421ab882cea16e4290fc8d626cef50a97fa19f3d",
+    "comparator.log": "1645271d5c627592913d912db17034530b667611ecb3dfffb95cb95fbf1d582e",
+    "controls/ForbiddenAxiom.log": "b0a5a0f88c695e737f500fac063b8323ca1532e60e5d07c39e24c53e9e59f739",
+    "controls/Good.log": "ca26552560beb4a5a0001c25758d82292c42de39752f787a27bcce199f64d4fa",
+    "controls/SorrySolution.log": "cd500ef0d348b7ebf47f72ba34c5f2329cd19e9eee8ffabf3042e637bfd541a9",
+    "controls/WrongStatement.log": "2abbd4aadcfb6d792741d3af9d1a95b79d40cf2554aa99c6d43505a88c32a547",
+    "environment.txt": "b9e10aa268f6b7d756ea51af8da7da44cb7faac9a3382b2e029632b8d83e8016",
+    "fc-module-build.log": "5e882539267b1718958e4e5fa46a33dd9e32d55a5fba24a6f35a88df24c17935",
+    "inputs/challenge.diff": "e294ce034fbd700097de9060b48188a81b4a5792cdf2adc2bce81f72aab1d351",
+    "inputs/inputs.json": "9eebc7ee742e5fea41952bdf5e9c819e2ca14391703b376bdba563e83cefa70f"
+  }
+}
