@@ -8,4 +8,4 @@
 Both runs compare the two original pinned proofs with the same FC revision,
 restrict their axioms, and replay the solution through Lean's kernel. Each record
 identifies its executed harness commit separately from the commit publishing the
-evidence. The [current harness](../../../leanWithComparator/) is available on main.
+evidence. The [current harness](../../leanWithComparator/) is available on main.
