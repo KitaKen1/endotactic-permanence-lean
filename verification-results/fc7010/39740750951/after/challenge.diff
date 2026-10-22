@@ -1,0 +1,17 @@
+--- FC-original.lean
++++ Challenge.lean
+@@ -36,7 +36,7 @@
+ 
+ @[expose] public section
+ 
+-namespace Endotactic
++namespace EndotacticFC
+ 
+ /-- A directed reaction network. -/
+ structure Network (d m : ℕ) where
+@@ -144,4 +144,4 @@
+             N.UniformPermanent ℓ u c := by
+   sorry
+ 
+-end Endotactic
++end EndotacticFC

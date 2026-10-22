@@ -1,0 +1,17 @@
+Running as unit: run-u24.service; invocation ID: da7430d98069485daef0d738c741c99f
+Building Challenge
+⚠ [2/3] Replayed Challenge
+warning: Challenge.lean:1:8: declaration uses `sorry`
+Build completed successfully (3 jobs).
+Exporting #[comparatorControl, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Challenge
+Building ForbiddenAxiom
+✔ [2/3] Built ForbiddenAxiom (223ms)
+Build completed successfully (3 jobs).
+Exporting #[comparatorControl, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from ForbiddenAxiom
+uncaught exception: Illegal axiom detected: 'unauthorized'
+Finished with result: exit-code
+Main processes terminated with: code=exited/status=1
+Service runtime: 2.067s
+CPU time consumed: 2.204s
+Memory peak: 1.6M
+Memory swap peak: 0B

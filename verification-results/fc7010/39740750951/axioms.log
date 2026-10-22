@@ -1,0 +1,2 @@
+'EndotacticFC.extended_permanence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EndotacticFC.measurable_extended_permanence' depends on axioms: [propext, Classical.choice, Quot.sound]

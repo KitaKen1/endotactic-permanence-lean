@@ -1,0 +1,19 @@
+Running as unit: run-u22.service; invocation ID: da5f05018ef84765b18d6d0f2bdf2b5b
+Building Challenge
+⚠ [2/3] Built Challenge (227ms)
+warning: Challenge.lean:1:8: declaration uses `sorry`
+Build completed successfully (3 jobs).
+Exporting #[comparatorControl, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Challenge
+Building Good
+✔ [2/3] Built Good (235ms)
+Build completed successfully (3 jobs).
+Exporting #[comparatorControl, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Good
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+Finished with result: success
+Main processes terminated with: code=exited/status=0
+Service runtime: 2.513s
+CPU time consumed: 2.741s
+Memory peak: 256.0K
+Memory swap peak: 0B

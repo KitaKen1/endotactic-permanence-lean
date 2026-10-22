@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-22T07:34:02.782685+00:00",
+  "harness_commit": "050430c825ebe9c8aac572fa4af57ad438d7b5ab",
+  "fc_head": "7fa51437bb6717db269e4f5449b2845085c7f545",
+  "proof_commit": "bfc411af63d0b11b2fd35d6a234249fc56080205",
+  "targets": [
+    "EndotacticFC.extended_permanence",
+    "EndotacticFC.measurable_extended_permanence"
+  ],
+  "dependency_commits": {
+    "endotacticPermanence": "bfc411af63d0b11b2fd35d6a234249fc56080205",
+    "formal_conjectures": "7fa51437bb6717db269e4f5449b2845085c7f545",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "proof_source_file_count": 124,
+  "pins_sha256": "eca9a6f96a5d3fbaca978e6a15ab84fb4642f1bc95a807618938d05d6759bdfe",
+  "files_sha256": {
+    "comparator.json": "82842a00a2281eae83605af4f66540b85502c5354a7817a57a335a9eee756d27",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "Solution.lean": "0f60bcc25034abe7958e7918f481c7253032caba20e3120ca5815a5d77e0da7c",
+    "README.md": "8491df71d588ff382781d51d74ef8fc0afc7a3e553eb0b69b7f38bef8c3194a0",
+    "lake-manifest.json": "6437e3ada997e836593a88547932086a78ce604f3e34c48ca4f329c993093634",
+    "Audit.lean": "2fe47c4f4a1584fdd55df78b9a2f58f5186e238285bb830e088cb34d89f6962c",
+    ".gitignore": "c7be3fd29d339e39f5c4c6d11047e3f49c9d8ade61eee5f7925daf9be5668bfa",
+    "lakefile.toml": "6255914af40468260828eb105f1e66dfee6c94864ccb66962d4e2fd886d8d68c",
+    "Challenge.lean": "68bcb7db300b6629e103630384e41370a24ed88ef449784dde75511ae6eac115",
+    "scripts/sandbox-run.sh": "e18cf6dadca22eb9739443f3f573344378e480c37dc0838bac0e6ac1c11aecf3",
+    "scripts/verify.sh": "196fa10b83c64e319bfa1a4e087e07d4d79e1a040632b591df41556770cbcdff",
+    "scripts/install-tools.sh": "0f98bd02ac2a61e8df24e006c46f1d17f60671cee6de95dd131bec42d1749286",
+    "scripts/check-axioms.py": "f9b7e704a6e9811c571cf7a688e395aeb648cb729355c5a4bbf89d16ab760bfb",
+    "scripts/check-inputs.py": "8fa0509fde85b040530f529b28087159ee913a73cddc6c67e1038deccd75c423",
+    "scripts/negative-controls.sh": "b11672bd73272960befd1ebdeab14521e21f4dadeca66ed61e2b5be9982a6a70",
+    "scripts/check-tools.py": "10b494250f17998892c4053166c39177b3ee665c06797ff09747f7de24e155df",
+    "sources/pr-statement.lean": "c44267cd5f9293d3af6b9fdb195110cc114355f43d216c0f6c31c92b390377b3",
+    "../.github/workflows/fc7010-comparator.yml": "3ea5dc37aabc1d9bd2d5c95d83481992d048b8fac59eeb363fd68c778f18606e"
+  },
+  "run": {
+    "GITHUB_REPOSITORY": "KitaKen1/endotactic-permanence-lean",
+    "GITHUB_SHA": "050430c825ebe9c8aac572fa4af57ad438d7b5ab",
+    "GITHUB_RUN_ID": "39740750951",
+    "GITHUB_RUN_ATTEMPT": "1"
+  }
+}

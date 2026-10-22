@@ -1,0 +1,17 @@
+Running as unit: run-u23.service
+Building Challenge
+⚠ [2/3] Replayed Challenge
+warning: Challenge.lean:1:8: declaration uses `sorry`
+Build completed successfully (3 jobs).
+Exporting #[comparatorControl, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from Challenge
+Building WrongStatement
+✔ [2/3] Built WrongStatement (223ms)
+Build completed successfully (3 jobs).
+Exporting #[comparatorControl, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from WrongStatement
+uncaught exception: Challenge and solution theorem statement do not match: 'comparatorControl'
+Finished with result: exit-code
+Main processes terminated with: code=exited/status=1
+Service runtime: 2.286s
+CPU time consumed: 2.196s
+Memory peak: 1.4M
+Memory swap peak: 0B
