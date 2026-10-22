@@ -1,0 +1,88 @@
+name: FC7010 endotactic permanence verification
+
+on:
+  push:
+    branches: [fc7010-endotactic-comparator-20261022]
+    paths:
+      - 'leanWithComparator/**'
+      - '.github/workflows/fc7010-comparator.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fc7010-comparator-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Prepare disposable Linux runner and Lean manager
+        run: |
+          test "$GITHUB_ACTIONS" = true
+          test "$RUNNER_ENVIRONMENT" = github-hosted
+          test "$RUNNER_OS" = Linux
+          # Free only unused SDKs in this disposable GitHub-hosted VM.
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup \
+            /opt/hostedtoolcache /usr/share/swift /usr/local/share/powershell /usr/lib/jvm \
+            /usr/local/share/boost /opt/microsoft /opt/google /opt/az /usr/local/share/chromium
+          sudo docker system prune -af > /dev/null 2>&1 || true
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          echo "COMPARATOR_TOOLS=$RUNNER_TEMP/fc7010-comparator-tools" >> "$GITHUB_ENV"
+          sudo apt-get update -qq
+          sudo apt-get install -y -q time
+          available=$(df --output=avail -BG / | tail -1 | tr -dc 0-9)
+          if [ "$available" -ge 36 ]; then
+            sudo fallocate -l 16G /fc7010-swap
+            sudo chmod 600 /fc7010-swap
+            sudo mkswap /fc7010-swap
+            sudo swapon /fc7010-swap
+          fi
+          free -h
+          df -h /
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5
+        with:
+          go-version: '1.24.2'
+          cache: false
+      - name: Fetch pinned dependencies and trusted Mathlib cache
+        working-directory: leanWithComparator
+        run: lake exe cache get
+      - name: Verify exact FC revision, namespace transformation and original proof sources
+        working-directory: leanWithComparator
+        run: python3 scripts/check-inputs.py --require-dependencies --receipt-dir evidence/inputs
+      - name: Install pinned Comparator, exporter and Landrun
+        run: bash leanWithComparator/scripts/install-tools.sh
+      - name: Accept a correct proof and reject three invalid controls
+        run: bash leanWithComparator/scripts/negative-controls.sh
+      - name: Compare both theorem statements, audit axioms and replay the proof environment
+        run: bash leanWithComparator/scripts/verify.sh
+      - name: Require complete results for both targets
+        run: |
+          test "$(cat leanWithComparator/evidence/status.txt)" = PASS
+          python3 - <<'PY'
+          import json
+          d=json.load(open('leanWithComparator/evidence/result.json'))
+          assert d['status']=='PASS' and len(d['targets'])==2
+          assert all(d[k] for k in ['comparator','axiom_audit','fc_module_build','negative_controls'])
+          assert all(t['statement_and_definitions'] and t['permitted_axioms_only'] and t['kernel_replay'] for t in d['targets'].values())
+          PY
+      - name: Upload full success or failure evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: fc7010-comparator-${{ github.run_id }}-${{ github.run_attempt }}
+          path: leanWithComparator/evidence/
+          retention-days: 90
+          if-no-files-found: warn

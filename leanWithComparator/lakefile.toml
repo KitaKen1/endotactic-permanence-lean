@@ -1,0 +1,29 @@
+name = "fc7010_comparator"
+version = "0.1.0"
+defaultTargets = ["Solution"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[require]]
+name = "endotacticPermanence"
+git = "https://github.com/KitaKen1/endotactic-permanence-lean"
+rev = "bfc411af63d0b11b2fd35d6a234249fc56080205"
+subDir = "lean"
+
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/KitaKen1/formal-conjectures"
+rev = "7fa51437bb6717db269e4f5449b2845085c7f545"
+
+[[lean_lib]]
+name = "Challenge"
+[lean_lib.leanOptions]
+warn.sorry = false
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "Audit"
