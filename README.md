@@ -82,8 +82,8 @@ Restricting to locally piecewise differentiable rates then gives the main
 conjecture. We sketch this argument below; the links identify the corresponding
 Lean arguments.
 
-**Setup and goal.** Write $v_e=y'_e-y_e$ for the reaction vectors and
-$x^{y_e}=\prod_{j=1}^d x_j^{(y_e)_j}$ for the source monomials. Set
+**Setup and goal.** Write $`v_e=y'_e-y_e`$ for the reaction vectors and
+$`x^{y_e}=\prod_{j=1}^d x_j^{(y_e)_j}`$ for the source monomials. Set
 
 ~~~math
 F_a(x)=\sum_e a_e x^{y_e}v_e,\qquad
@@ -92,24 +92,24 @@ F_a(x)=\sum_e a_e x^{y_e}v_e,\qquad
 ~~~
 
 Solutions are understood in the integral sense, so the differential equation
-holds almost everywhere. Let $S=\operatorname{span}\{v_e:e\in E\}$ and fix
-$c\in\mathbb R_{>0}^d$. Since $F_a(x)\in S$, solutions starting in $c+S$
+holds almost everywhere. Let $`S=\mathrm{span}\{v_e:e\in E\}`$ and fix
+$`c\in\mathbb R_{>0}^d`$. Since $`F_a(x)\in S`$, solutions starting in $`c+S`$
 remain in this affine space. We prove global positive existence and uniqueness
-and construct a compact set $K\subset(c+S)\cap\mathbb R_{>0}^d$ that eventually
+and construct a compact set $`K\subset(c+S)\cap\mathbb R_{>0}^d`$ that eventually
 contains every positive trajectory in the class. The set must be chosen before
 the rate path and the initial state; the entry time may depend on both.
 
 **1. Endotacticity gives a positive projected flux.** Fix a direction
-$r\notin S^\perp$. Among reactions with $r\cdot v_e\ne0$, choose $e_*$
-minimizing $r\cdot y_e$. Endotacticity implies $r\cdot v_{e_*}>0$:
+$`r\notin S^\perp`$. Among reactions with $`r\cdot v_e\ne0`$, choose $`e_*`$
+minimizing $`r\cdot y_e`$. Endotacticity implies $`r\cdot v_{e_*}>0`$:
 a negative projection would require a positive reaction at a strictly lower
 source level. For the same reason, every negatively projected reaction has
-$r\cdot(y_e-y_{e_*})>0$.
+$`r\cdot(y_e-y_{e_*})>0`$.
 
 These finitely many strict gaps persist when the exponent vector is perturbed
-from $r$ to a sufficiently close $p$. Thus there are
-$\varepsilon(r),\gamma_r>0$ such that, for $0<h<1$ and
-$\|p-r\|_\infty<\varepsilon(r)$, the point $x=h^p=(h^{p_1},\ldots,h^{p_d})$
+from $`r`$ to a sufficiently close $`p`$. Thus there are
+$`\varepsilon(r),\gamma_r>0`$ such that, for $`0<h<1`$ and
+$`\|p-r\|_\infty<\varepsilon(r)`$, the point $`x=h^p=(h^{p_1},\ldots,h^{p_d})`$
 satisfies
 
 ~~~math
@@ -126,23 +126,23 @@ r\cdot F_a(x)\ge x^{y_{e_*}}
  -u h^{\gamma_r}\sum_{r\cdot v_e<0}|r\cdot v_e|\right)>0
 ~~~
 
-for all sufficiently small $h$, uniformly over $a\in[\ell,u]^E$.
-Directions in $S^\perp$ instead have identically zero projected flux.
+for all sufficiently small $`h`$, uniformly over $`a\in[\ell,u]^E`$.
+Directions in $`S^\perp`$ instead have identically zero projected flux.
 See [FluxBound.lean](lean/Endotactic/FluxBound.lean) and
 [FiniteSlopeDominance.lean](lean/Endotactic/FiniteSlopeDominance.lean).
 
 **2. Turn directional estimates into finitely many affine barriers.**
-The main geometric lemma constructs fixed slopes $r_1,\ldots,r_m\in[-1,1]^d$
-and scale-dependent offsets $b_i(h)$. Define
+The main geometric lemma constructs fixed slopes $`r_1,\ldots,r_m\in[-1,1]^d`$
+and scale-dependent offsets $`b_i(h)`$. Define
 
 ~~~math
 L_{i,h}(x)=r_i\cdot x+b_i(h),\qquad
 \Phi_h(x)=\min_{1\le i\le m}L_{i,h}(x).
 ~~~
 
-A branch is *active* at $x$ when $L_{i,h}(x)=\Phi_h(x)$.
-For any prescribed pointwise positive tolerance $\varepsilon$, the family can
-be chosen so that, for all sufficiently small $h$,
+A branch is *active* at $`x`$ when $`L_{i,h}(x)=\Phi_h(x)`$.
+For any prescribed pointwise positive tolerance $`\varepsilon`$, the family can
+be chosen so that, for all sufficiently small $`h`$,
 
 ~~~math
 p\in[-1,1]^d,\quad L_{i,h}(h^p)=\Phi_h(h^p)
@@ -151,14 +151,14 @@ p\in[-1,1]^d,\quad L_{i,h}(h^p)=\Phi_h(h^p)
 ~~~
 
 This holds for every minimizing branch, including ties. The affine functions
-are functions of the concentration $x$; the logarithmic coordinates $p$ locate
+are functions of the concentration $`x`$; the logarithmic coordinates $`p`$ locate
 where their slopes give the flux estimate from Step 1.
 
 The lemma is proved by induction on dimension. At a fixed minimum coordinate
-$t=\min_j p_j$, lower-dimensional families are lifted by putting slope $t$
+$`t=\min_j p_j`$, lower-dimensional families are lifted by putting slope $`t`$
 in the remaining coordinates; comparisons with competing branches control
 those remaining coordinates. The resulting estimates extend to a neighborhood
-of $t$. A finite interval cover of the possible minimum levels, with ordered
+of $`t`$. A finite interval cover of the possible minimum levels, with ordered
 overlaps and suitable offset shifts, combines these local families.
 The construction allows discontinuous tolerances with no positive uniform
 lower bound. See
@@ -166,35 +166,35 @@ lower bound. See
 [AffineApproximationExistence.lean](lean/Endotactic/AffineApproximationExistence.lean).
 
 Choose the tolerance small enough for Step 1, and also require
-$\varepsilon(0)\le1/8$ and
-$\varepsilon(r)\le\|r\|_\infty/2$ for $r\ne0$.
+$`\varepsilon(0)\le1/8`$ and
+$`\varepsilon(r)\le\|r\|_\infty/2`$ for $`r\ne0`$.
 Since there are only finitely many slopes, one small-scale threshold works
-for all of them. Throughout $[h,h^{-1}]^d$, every active branch then has
-positive projected flux unless its slope belongs to $S^\perp$.
+for all of them. Throughout $`[h,h^{-1}]^d`$, every active branch then has
+positive projected flux unless its slope belongs to $`S^\perp`$.
 See [ActivityFluxBridge.lean](lean/Endotactic/ActivityFluxBridge.lean).
 
 **3. Construct compact invariant sets that capture every positive point.**
-For any fixed $z>0$, its exponent vector
-$p_h(z)=(\log z_j/\log h)_j$ tends to $0$ as $h\downarrow0$.
+For any fixed $`z>0`$, its exponent vector
+$`p_h(z)=(\log z_j/\log h)_j`$ tends to $`0`$ as $`h\downarrow0`$.
 The tolerance condition and finiteness of the slopes force every branch active
-at $z$ to have slope zero once $h$ is sufficiently small.
-A zero-slope branch is constant, so whenever it is active, $\Phi_h$ attains
-its global maximum. In particular, for small $h$, put
+at $`z`$ to have slope zero once $`h`$ is sufficiently small.
+A zero-slope branch is constant, so whenever it is active, $`\Phi_h`$ attains
+its global maximum. In particular, for small $`h`$, put
 
 ~~~math
 M_h=\Phi_h(c)=\max_{x\in\mathbb R^d}\Phi_h(x),\qquad
 P_h=\{x:\Phi_h(x)=M_h\}.
 ~~~
 
-The set $P_h$ is a closed convex polyhedron containing $c$.
-For small $h$, the point $c$ lies inside $(h^{1/4},h^{-1/4})^d$.
-So does all of $P_h$: otherwise a segment from $c$ to a point of $P_h$
+The set $`P_h`$ is a closed convex polyhedron containing $`c`$.
+For small $`h`$, the point $`c`$ lies inside $`(h^{1/4},h^{-1/4})^d`$.
+So does all of $`P_h`$: otherwise a segment from $`c`$ to a point of $`P_h`$
 outside this box would meet its boundary. At that boundary point,
-$\|p_h(x)\|_\infty=1/4$, while the active zero-slope branch requires
-$\|p_h(x)\|_\infty<\varepsilon(0)\le1/8$, a contradiction.
+$`\|p_h(x)\|_\infty=1/4`$, while the active zero-slope branch requires
+$`\|p_h(x)\|_\infty<\varepsilon(0)\le1/8`$, a contradiction.
 
-On the compact boundary of this box, the continuous function $\Phi_h$ has
-maximum strictly below $M_h$. Choose $Q_h$ between that maximum and $M_h$.
+On the compact boundary of this box, the continuous function $`\Phi_h`$ has
+maximum strictly below $`M_h`$. Choose $`Q_h`$ between that maximum and $`M_h`$.
 Convexity again excludes any superlevel point outside the box, giving
 
 ~~~math
@@ -203,38 +203,38 @@ B_h=\{x:\Phi_h(x)\ge Q_h\}
 \subset(h^{1/4},h^{-1/4})^d.
 ~~~
 
-Thus $B_h$ is compact and strictly positive. On each face, the corresponding
+Thus $`B_h`$ is compact and strictly positive. On each face, the corresponding
 affine branch is active, so its derivative along the vector field is either
-strictly positive or identically zero by conservation. Hence $B_h$ is forward
-invariant for every admissible rate path. Every fixed $z>0$ belongs to $P_h$,
-and hence to $B_h$, for all sufficiently small $h$.
+strictly positive or identically zero by conservation. Hence $`B_h`$ is forward
+invariant for every admissible rate path. Every fixed $`z>0`$ belongs to $`P_h`$,
+and hence to $`B_h`$, for all sufficiently small $`h`$.
 Local existence and uniqueness for the measurable-in-time, locally
 Lipschitz-in-state vector field, together with this compact confinement,
 give global positive solutions.
 See [NarrowZeroCap.lean](lean/Endotactic/NarrowZeroCap.lean) and
 [ScaleTrapConstruction.lean](lean/Endotactic/ScaleTrapConstruction.lean).
 
-**4. Pass from an initial trap to a common scale.** Fix $0<H<1$ so that
-the flux, box and invariance properties hold for $0<h\le H$. Suppose a
-trajectory in $c+S$ eventually stays in $B_h$ for some such $h$, and set
-$g=\min\{\sqrt h,H\}$. Since
-$g\le h^{1/4}$, we have
+**4. Pass from an initial trap to a common scale.** Fix $`0<H<1`$ so that
+the flux, box and invariance properties hold for $`0<h\le H`$. Suppose a
+trajectory in $`c+S`$ eventually stays in $`B_h`$ for some such $`h`$, and set
+$`g=\min\{\sqrt h,H\}`$. Since
+$`g\le h^{1/4}`$, we have
 
 ~~~math
 B_h\subset[h^{1/4},h^{-1/4}]^d\subset[g,g^{-1}]^d.
 ~~~
 
-The flux estimates for $\Phi_g$ therefore apply throughout the old trap.
-Moreover, at a point $x\in c+S$ with $\Phi_g(x)<M_g$, no active slope can
-belong to $S^\perp$: such a branch is constant on $c+S$ and has value at least
-$M_g$ at $c$, contradicting activity at $x$.
+The flux estimates for $`\Phi_g`$ therefore apply throughout the old trap.
+Moreover, at a point $`x\in c+S`$ with $`\Phi_g(x)<M_g`$, no active slope can
+belong to $`S^\perp`$: such a branch is constant on $`c+S`$ and has value at least
+$`M_g`$ at $`c`$, contradicting activity at $`x`$.
 
 On the compact set
-$B_h\cap(c+S)\cap\{\Phi_g\le Q_g\}$, all active projected fluxes are
+$`B_h\cap(c+S)\cap\{\Phi_g\le Q_g\}`$, all active projected fluxes are
 therefore strictly positive. Continuity, the compact coefficient box and
-finiteness of the branches give a uniform lower bound $\eta>0$.
+finiteness of the branches give a uniform lower bound $`\eta>0`$.
 Along the trajectory, the finite minimum of affine observables is absolutely
-continuous. Thus, after entry into $B_h$, the capped function
+continuous. Thus, after entry into $`B_h`$, the capped function
 
 ~~~math
 \psi(t)=\min\{\Phi_g(x(t)),Q_g\}
@@ -242,27 +242,27 @@ continuous. Thus, after entry into $B_h$, the capped function
 \psi'(t)\ge\eta\ \text{a.e. on }\{t:\psi(t)<Q_g\}.
 ~~~
 
-It reaches $Q_g$ in finite time and stays there, proving eventual residence
-in $B_g$. The strict gap $Q_g<M_g$ supplies the positive margin needed for
+It reaches $`Q_g`$ in finite time and stays there, proving eventual residence
+in $`B_g`$. The strict gap $`Q_g<M_g`$ supplies the positive margin needed for
 finite entry. This argument uses box containment and does not require the
-sets $B_h$ to be nested.
+sets $`B_h`$ to be nested.
 See [LateCompactAbsorption.lean](lean/Endotactic/LateCompactAbsorption.lean) and
 [ScaleTrapPermanence.lean](lean/Endotactic/ScaleTrapPermanence.lean).
 
 **5. Finish the permanence argument.** Given any positive initial state in
-$c+S$, Step 3 supplies an initial scale $h_0\le H$. Iterate
+$`c+S`$, Step 3 supplies an initial scale $`h_0\le H`$. Iterate
 
 ~~~math
 h_{n+1}=\min\{\sqrt{h_n},H\},\qquad
 h_n=\min\{h_0^{\,2^{-n}},H\}.
 ~~~
 
-Since $h_0^{2^{-n}}\to1$ and $H<1$, the sequence reaches $H$ after finitely
+Since $`h_0^{2^{-n}}\to1`$ and $`H<1`$, the sequence reaches $`H`$ after finitely
 many steps. Repeated application of Step 4 gives eventual residence in
-$K=B_H\cap(c+S)$. This set is nonempty, compact and contained in the positive
+$`K=B_H\cap(c+S)`$. This set is nonempty, compact and contained in the positive
 class. It depends only on the network, coefficient bounds and chosen class
 representative. The initial scale and the successive entry times may depend
-on the trajectory, but $K$ does not. This proves the common-box measurable-rate
+on the trajectory, but $`K`$ does not. This proves the common-box measurable-rate
 statement; restricting the rates gives the displayed piecewise-rate statement.
 See [GeneralPermanence.lean](lean/Endotactic/GeneralPermanence.lean).
 
